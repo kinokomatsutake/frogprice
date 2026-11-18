@@ -3,12 +3,18 @@
     "productId": "608230",
     "status": "verified",
     "finish": "nonfoil",
+    "name": "Ambitious Assault",
+    "expansionName": "Kamigawa: Neon Dynasty",
+    "number": "133",
     "printing": "Kamigawa: Neon Dynasty (NEO) 133/302"
   },
   "images/Anger of the Gods.webp": {
     "productId": "495539",
     "status": "verified",
     "finish": "nonfoil",
+    "name": "Anger of the Gods",
+    "expansionName": "Secret Lair Drop Series",
+    "number": "113",
     "printing": "Secret Lair Drop Series (SLD) 113"
   }
 }
