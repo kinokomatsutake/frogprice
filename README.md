@@ -12,7 +12,7 @@ Prices are shown in EUR and labelled as guide values, not live offers. Alternate
 
 ## Add your images
 
-Place the 344 WebP files in `images/` and list their paths in `images.json`. The original ZIP is not present in this new repository, so image assets and their manifest still need to be added.
+Place the 344 WebP files in `images/` and list their paths in `images.json`. The 344 image paths from the original checklist are already in `images.json`. The gallery loads the corresponding WebP assets directly from the untouched `kinokomatsutake/picture-checklist` repository, so this new repository does not duplicate or modify those image files.
 
 ## Add exact printing mappings
 
