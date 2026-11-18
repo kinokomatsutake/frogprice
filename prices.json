@@ -4,16 +4,28 @@
     "name": ""
   },
   "images/Ambitious assault.webp": {
-    "matched": false,
-    "name": "Ambitious Assault"
+    "matched": true,
+    "productId": 608230,
+    "name": "Ambitious Assault",
+    "printing": "Kamigawa: Neon Dynasty (NEO) 133/302",
+    "average": 0.08,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Amphibian Downpour.webp": {
     "matched": false,
     "name": ""
   },
   "images/Anger of the Gods.webp": {
-    "matched": false,
-    "name": "Anger of the Gods"
+    "matched": true,
+    "productId": 495539,
+    "name": "Anger of the Gods",
+    "printing": "Secret Lair Drop Series (SLD) 113",
+    "average": null,
+    "low": 1.42,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Anurid barkripper.webp": {
     "matched": false,
