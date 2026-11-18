@@ -27,7 +27,7 @@ def main():
     mapping = json.loads((ROOT / "cardmarket-mapping.json").read_text(encoding="utf-8"))
     images = json.loads((ROOT / "images.json").read_text(encoding="utf-8"))
     catalog = records(fetch_json(CATALOG_URL), ("products", "productList", "items", "data"))
-    guide = records(fetch_json(GUIDE_URL), ("priceGuides", "priceGuide", "items", "data"))
+    guide_payload = fetch_json(GUIDE_URL)\n    guide = records(guide_payload, ("priceGuides", "priceGuide", "items", "data"))
     products = {str(p.get("idProduct")): p for p in catalog if p.get("idProduct") is not None}
     guides = {str(p.get("idProduct")): p for p in guide if p.get("idProduct") is not None}
     output = {}
