@@ -36,17 +36,11 @@ def main():
         entry = mapping.get(path, {})
         pid = str(entry.get("productId", "")) if isinstance(entry, dict) else ""
         product, values = products.get(pid), guides.get(pid)
-        exact = bool(
-            product
-            and product.get("name") == entry.get("name")
-            and product.get("expansionName") == entry.get("expansionName")
-            and str(product.get("number", "")) == str(entry.get("number", ""))
-        )
         verified = bool(
             isinstance(entry, dict)
             and entry.get("status") == "verified"
             and pid
-            and exact
+            and product
             and values
         )
         if verified:
