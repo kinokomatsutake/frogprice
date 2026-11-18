@@ -52,7 +52,7 @@ async function load(){
   grid.replaceChildren();
   for(const path of rows){
    const item=prices[path]||{},card=document.createElement('article');card.className='card';
-   const img=document.createElement('img');img.src='./'+path.replace(/^\//,'');img.alt=titleFromPath(path);img.loading='lazy';img.onerror=()=>{img.alt='Image unavailable';img.style.minHeight='180px'};
+   const img=document.createElement('img');img.src='https://raw.githubusercontent.com/kinokomatsutake/picture-checklist/main/'+path.split('/').map(encodeURIComponent).join('/');img.alt=titleFromPath(path);img.loading='lazy';img.onerror=()=>{img.alt='Image unavailable';img.style.minHeight='180px'};
    const info=document.createElement('div');info.className='card-info';
    const name=document.createElement('div');name.className='name';name.textContent=item.name||titleFromPath(path);
    const vals=document.createElement('div');vals.className='prices';
