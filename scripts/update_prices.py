@@ -27,7 +27,8 @@ def main():
     mapping = json.loads((ROOT / "cardmarket-mapping.json").read_text(encoding="utf-8"))
     images = json.loads((ROOT / "images.json").read_text(encoding="utf-8"))
     catalog = records(fetch_json(CATALOG_URL), ("products", "productList", "items", "data"))
-    guide_payload = fetch_json(GUIDE_URL)\n    guide = records(guide_payload, ("priceGuides", "priceGuide", "items", "data"))
+    guide_payload = fetch_json(GUIDE_URL)
+    guide = records(guide_payload, ("priceGuides", "priceGuide", "items", "data"))
     products = {str(p.get("idProduct")): p for p in catalog if p.get("idProduct") is not None}
     guides = {str(p.get("idProduct")): p for p in guide if p.get("idProduct") is not None}
     output = {}
@@ -44,12 +45,11 @@ def main():
                 "matched": True, "productId": int(pid),
                 "name": product.get("name"), "printing": entry.get("printing", ""),
                 "average": average, "low": low, "currency": "EUR",
-                "guideDate": guide_payload.get("createdAt") or datetime.now(timezone.utc).isoformat()
+                "guideDate": guide_payload.get("createdAt") if isinstance(guide_payload, dict) else None
             }
         else:
             output[path] = {"matched": False, "name": entry.get("name", "") if isinstance(entry, dict) else ""}
-    (ROOT / "prices.json").write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (ROOT / "prices.json").write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
 
 if __name__ == "__main__":
-    guide_payload = {}
     main()
