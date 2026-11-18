@@ -1,1 +1,1378 @@
-{}
+{
+  "images/Alchemists refuge.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Ambitious assault.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Amphibian Downpour.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Anger of the Gods.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Anurid barkripper.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Anurid brushhopper.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Anurid murkdiver.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Anurid scavenger.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Anurid swarmsnapper.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Arcbound Fiend.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Auntie's Snitch.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Auntie’s Sentence.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Bakis curse.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Bala Ged Recovery.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Bala ged sanctuary.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Baloth Pup.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Beastmaster ascension.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Beck Call.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Bellowing crier.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Berta, Wise Extrapolator.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Biomass Mutation.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Bloated toad.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Blor the impervious.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Boggart birth rite.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Boggart Prankster.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Bogwater lumaret.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Burglar Banemaker.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Burrog barrage.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Burrog befuddler.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Byrke, long ear of the Law.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/caterwauling Boggart.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Chain Reaction.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Chaos warp.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Chea, friend to maybe too many.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Chub toad.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Circle of protection Green.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Cirina Bargainspinner.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Clement, the worrywort (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Clement, the worrywort (3).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Clement, the worrywort.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Clifftop Lookout.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Clue.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Commander's Sphere.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Communal Brewing.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Croakid Amphibonaut.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Croaking counterpart (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Croaking counterpart.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Crocanura.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Crop rotation.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Culling Ritual.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Cursed Courtier.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Cut a Deal.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Cutdown A.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Cutdown b.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Cutdown C.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Dancing from Dark to Dawn.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Deathcap Glade.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Dinas Guidance.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Diresight.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Dour Port-mage (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Dour Port-mage.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Dreamdew Survivor.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Druidic Ritual.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Duergar cave-guard.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Earwig Squad.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Ecological Appreciation.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Eldritch evolution.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Ellywick Tumblestrum (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Ellywick tumblestrum (3).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Ellywick Tumblestrum.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Encouraging aviator.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Enhcantment alteration.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Entangling Trap.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Excavating anurid.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Expanded anatomy.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Explore.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Fatal push.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Fauna Shaman (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Fauna Shaman.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Fearless Swashbuckler.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Feral felix.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Fire-lit thicket.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Fisher’s talent.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Flubs, the fool.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Follow the lumarets.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Food.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/For the common good.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Fortune Tellers talent.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Fountainport bell.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Frog Butler.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Frog Lizard.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Frog-squirrels.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Frog.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Froghemoth.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Frogify.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Frogkin Kidnapper.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Frogmite (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Frogmite.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Frogtosser Banneret.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Galloping Lizrog.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Gangly Stompling.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Genghis frog.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Gev, Scaled Scorch.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Gigantoad.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Glarb, calamitys augur (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Glarb, calamitys augur.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Glimmer Bairn.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Goblin balloon brigade.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Goblin Scouts.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Gorma, the gullet.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Gray slaad (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Gray slaad.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Grolnok, the omnivore (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Grolnok, the omnivore (3).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Grolnok, the omnivore.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Gromp.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Grub, notorious auntie.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Grub, storied matriarch.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Grubs command.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Halo hopper.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Harmonize (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Haze Frog.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Helga, Skittish seer (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Helga, Skittish Seer.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Hezrou.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Hivespine Wolverine.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Howling mine.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Huus reach.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Hydradoodle.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Ignoble Hierarch.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Infested Thrinax.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Into the floodmaw Jap.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Into the floodmaw.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Island (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Island (3).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Island (4).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Island (5).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Island.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Jace, the mind sculptor.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Jade avenger (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Jade avenger.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Jovens Ferrets.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Kasmina´s Transmutation.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Kawin, itinerant meddler.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Keimi.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/King Solomon's Frogs.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Knowledge Vault.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Lady of Laughter.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Leapfrog.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Lightning Bolt.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Lilysplash mentor.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Lluwen, exchange student.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Long River Lurker.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Long River's Pull.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Lumaret’s Favor.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Mabel, Valley Hero.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Mabel’s Mettle.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Mad auntie.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Man-thing, marsh protector.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Maskwood nexus.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Mercurial Transformation.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Merrow Levitator.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Might of murasa.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Mistbreath elder (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Mistbreath Elder.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Monstrify.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Morgue toad.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Mudbutton Cursetosser.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Mudbutton Torchrunner.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Nantuko  mentor.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Natures will.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Nissa, who shakes the world (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Nissa, who shakes the world.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Noxious toad.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Octomancer.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Okos Hospitality.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Omnibian.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Overprotect.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Painted Bluffs.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Papercraft decoy.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Pet Avengers.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Plaxcaster Frogling.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Poison Dart Frog.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Polliwallop.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Pollywog prodigy.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Pollywog Symbiote.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Poly morphists jest.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Pond Propet.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Portent of calamity (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Portent of Calamity.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Primal prayers (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Primal Prayers.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Primal Vigor.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Procrastinate.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Professor of Zoomancy.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Psychic frog (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Psychic frog (3).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Psychic Frog.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Punk frogs.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Quina, Qu Gourmet.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Raiding schemes.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Rampant Frogantua.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Rapid hybridization.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Ride the Shoopuf.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Riptide shapeshifter.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Rites of Flourishing.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/River Heralds Boon.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Riverchurn Monument.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Rootcast apprenticeship.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Run away together.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Sab-Sumen, Luxa Embodied.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Sab-Sunen, luxa embodied.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Sally pride, lioness leader.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Season of burrow.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Season of Growth.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Season of the Burrow.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Season of weaving (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Season of weaving.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Secret arcade Dusty parlor.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Sensation gorger.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Senseis divining top.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Seven Dwarves.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Show and Tell.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Skyskipper Duo.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Species Gorger.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Spiteful Hexmage.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Splash lasher (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Splash Lasher.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Splash Portal.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Splatter technique.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Spore frog.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Spring Splasher.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Starseer mentor.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Steeple creeper.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Stickytongue Sentinel.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Sting-slinger.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Stress dream.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Sun-collared raptor.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Sunshower Druid.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Surgeon general commander.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Swamp (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Swamp.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Swords to plowshares.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Sylvan scavenging.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Sylvan Tutor.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Tar Pitcher.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Tatsunari, toad rider (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Tatsunari, toad rider.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Textbook Tabulator.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Thalia and the gitrog monster (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Thalia and the gitrog monster (3).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Thalia and the gitrog monster (4).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Thalia and the gitrog monster.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/The gitrog monster (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/The gitrog monster (3).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/The gitrog monster (4).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/The gitrog monster (5).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/The Gitrog Monster.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/The Gitrosg, Ravenous Ride.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Thickest in the thicket.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Three tree scribe.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Titanic ultimatum.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Tragedy feaster.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Treat Trolley.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Treeguard Duo.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Trollbred guardian.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Turn to Frog.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Twenty-toed toad.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Ulna's Alley Shopkeep.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Unwilling Ingredient.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Uurg, spawn of turg (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Uurg, spawn of turg.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Valley floodcaller (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Valley Floodcaller.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Valley mighcaller.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Valley mightcaller.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Vantress transmutter.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Venus, Torn Between Worlds.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Vexling Shusher.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Vicious Battlerager.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Visionary's Dance.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Visions of dominance.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Wanderbrine Preacher.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Wandering troubadour.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Warteye vie.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Wasteland.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Waterspout Warden.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Whiptongue frog.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Wicked cursed.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Wish.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Wishing Well.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Witchs familiar.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Withering curse.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Woodland liege.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Wretched Anurid.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Yargle and multani (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Yargle and Multani.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Yargle happy day.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Yargle, Glutton of Urborg (2).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Yargle, glutton of urborg (3).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Yargle, glutton of urborg (4).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Yargle, glutton of urborg (5).webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Yargle, Glutton of Urborg.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/Yargle, goliath of otaria.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz1.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz10.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz11.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz12.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz13.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz14.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz15.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz16.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz17.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz18.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz19.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz2.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz20.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz21.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz22.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz23.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz24.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz25.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz26.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz27.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz28.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz29.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz3.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz30.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz31.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz32.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz33.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz34.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz35.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz36.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz37.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz38.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz39.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz4.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz40.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz5.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz6.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz7.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz8.webp": {
+    "matched": false,
+    "name": ""
+  },
+  "images/zz9.webp": {
+    "matched": false,
+    "name": ""
+  }
+}\n
