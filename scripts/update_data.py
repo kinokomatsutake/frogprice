@@ -133,9 +133,19 @@ def build_prices(cards):
                 method = "unique Cardmarket product name"
 
         if len(candidates) != 1:
+            name_candidates = name_index.get(cname, [])
+            number_candidates = number_index.get((cname, cnum), [])
+            sample = (number_candidates or name_candidates)[:12]
             prices[card["id"]] = {
                 "matched": False,
-                "reason": "no Cardmarket product" if not number_index.get((cname, cnum)) and not name_index.get(cname) else "multiple printings; no unambiguous product ID",
+                "reason": "no Cardmarket product" if not name_candidates else "multiple printings; no unambiguous product ID",
+                "candidate_products": [{
+                    "idProduct": x.get("idProduct"),
+                    "name": x.get("name") or x.get("enName"),
+                    "expansionName": x.get("expansionName"),
+                    "number": x.get("number"),
+                    "idExpansion": x.get("idExpansion"),
+                } for x in sample],
             }
             continue
 
