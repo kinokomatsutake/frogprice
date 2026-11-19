@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""OCR gallery cards and resolve only exact, high-confidence Cardmarket product IDs."""
+"""OCR gallery cards and resolve exact printings from all pages of Scryfall frog-art search."""
 import difflib
-import gzip
 import io
 import json
 import re
 import unicodedata
 import urllib.parse
 import urllib.request
+import time
 from pathlib import Path
 
 from PIL import Image
@@ -15,7 +15,8 @@ import pytesseract
 
 ROOT = Path(__file__).resolve().parents[1]
 ORIGINAL_REPO = "https://raw.githubusercontent.com/kinokomatsutake/picture-checklist/main/"
-BULK_INFO_URL = "https://api.scryfall.com/bulk-data"
+SCRYFALL_SEARCH_URL = "https://api.scryfall.com/cards/search"
+SCRYFALL_QUERY = "art:frog ++ @@ -is:alchemy"
 
 def fetch_bytes(url, timeout=90):
     req = urllib.request.Request(url, headers={
@@ -84,24 +85,25 @@ def main():
     mapping_path = ROOT / "cardmarket-mapping.json"
     mapping = json.loads(mapping_path.read_text(encoding="utf-8")) if mapping_path.exists() else {}
 
-    bulk_info = fetch_json(BULK_INFO_URL)
-    bulk = next((item for item in bulk_info.get("data", []) if item.get("type") == "default_cards"), None)
-    if not bulk or not (bulk.get("jsonl_download_uri") or bulk.get("download_uri")):
-        raise RuntimeError("Scryfall default_cards bulk data URL unavailable")
-    bulk_url = bulk.get("jsonl_download_uri") or bulk.get("download_uri")
-    if not bulk_url:
-        raise RuntimeError("Scryfall bulk data download URL unavailable")
-    bulk_bytes = fetch_bytes(bulk_url, timeout=900)
-    if bulk_bytes.startswith(b"\x1f\x8b"):
-        bulk_bytes = gzip.decompress(bulk_bytes)
-    if bulk.get("jsonl_download_uri"):
-        cards = [json.loads(line) for line in bulk_bytes.splitlines() if line.strip()]
-    else:
-        cards = json.loads(bulk_bytes.decode("utf-8"))
+    # Search every Scryfall page for the user's exact frog-art query.
+    # unique=prints is essential: each set/collector-number printing must remain distinct.
+    params = urllib.parse.urlencode({"q": SCRYFALL_QUERY, "unique": "prints", "order": "name"})
+    next_url = SCRYFALL_SEARCH_URL + "?" + params
     index = {}
-    for card in cards:
-        key = (str(card.get("set", "")).lower(), str(card.get("collector_number", "")).lower())
-        index.setdefault(key, []).append(card)
+    page_count = 0
+    total_cards = None
+    while next_url:
+        page = fetch_json(next_url, timeout=180)
+        page_count += 1
+        if total_cards is None:
+            total_cards = page.get("total_cards", 0)
+        for card in page.get("data", []):
+            key = (str(card.get("set", "")).lower(), str(card.get("collector_number", "")).lower())
+            index.setdefault(key, []).append(card)
+        next_url = page.get("next_page") if page.get("has_more") else None
+        if next_url:
+            time.sleep(0.12)  # stay comfortably below Scryfall's API rate limit
+    print(f"Loaded {sum(map(len, index.values()))} printing records across {page_count} pages (Scryfall total: {total_cards})")
 
     newly_verified = 0
     unresolved = 0
