@@ -86,7 +86,7 @@ def main():
 
     bulk_info = fetch_json(BULK_INFO_URL)
     bulk = next((item for item in bulk_info.get("data", []) if item.get("type") == "default_cards"), None)
-    if not bulk or not bulk.get("download_uri"):
+    if not bulk or not (bulk.get("jsonl_download_uri") or bulk.get("download_uri")):
         raise RuntimeError("Scryfall default_cards bulk data URL unavailable")
     bulk_url = bulk.get("jsonl_download_uri") or bulk.get("download_uri")
     if not bulk_url:
