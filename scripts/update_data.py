@@ -108,7 +108,7 @@ def build_prices(cards):
         prices[card["id"]] = {
             "matched": True, "product_id": product_id,
             "match_method": "exact name + expansion + collector number" if len(exact) == 1 else "unique Cardmarket product name (single catalogue printing)",
-            "printing": str(product.get("expansionName", "")) + " · " + str(product.get("number", "")),
+            "printing": (str(product.get("expansionName") or product.get("expansion") or "Unique catalogue name match") + ((" · " + str(product.get("number"))) if product.get("number") else "")),
             "normal": normal, "foil": foil,
             "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=" + product_id,
         }
