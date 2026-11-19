@@ -105,8 +105,21 @@ def main():
             time.sleep(0.12)  # stay comfortably below Scryfall's API rate limit
     print(f"Loaded {sum(map(len, index.values()))} printing records across {page_count} pages (Scryfall total: {total_cards})")
 
+    # Secondary exact-name index: this is safe only when the frog-art query
+    # contains exactly one eligible printing for the filename/card-face name.
+    name_index = {}
+    for cards in index.values():
+        for card in cards:
+            names = [card.get("name", "")]
+            names.extend(face.get("name", "") for face in card.get("card_faces", []))
+            for card_name in names:
+                key = normalize(card_name)
+                if key:
+                    name_index.setdefault(key, []).append(card)
+
     newly_verified = 0
     unresolved = 0
+    diagnostics = {"missing_footer": 0, "no_set_number_match": 0, "no_cardmarket_id": 0, "ambiguous_name": 0, "no_nonfoil": 0}
     for image_path in images:
         if Path(image_path).stem.lower().startswith("zz"):
             unresolved += 1
@@ -125,27 +138,53 @@ def main():
             continue
 
         set_code, collector_number = extract_set_and_number(footer_ocr)
-        if not set_code or not collector_number:
+        candidates = []
+        if set_code and collector_number:
+            candidates = index.get((set_code.lower(), collector_number.lower()), [])
+            ranked = [(name_score(card, title_ocr, image_path), card) for card in candidates]
+            ranked = [(score, card) for score, card in ranked if score >= 0.88 and card.get("cardmarket_id")]
+            if ranked:
+                best_score = max(score for score, _ in ranked)
+                best_cards = [card for score, card in ranked if score == best_score]
+                product_ids = {str(card["cardmarket_id"]) for card in best_cards}
+                if len(product_ids) == 1:
+                    candidates = best_cards
+                else:
+                    candidates = []
+            else:
+                candidates = []
+
+        # If OCR cannot read the set/collector footer, use the filename only
+        # when it identifies one unique Scryfall printing across every result page.
+        if not candidates:
+            filename_key = normalize(Path(image_path).stem)
+            filename_key = re.sub(r" [0-9]+$", "", filename_key)
+            exact = name_index.get(filename_key, [])
+            exact = [card for card in exact if card.get("cardmarket_id") and "nonfoil" in card.get("finishes", [])]
+            unique_prints = {(str(card.get("set", "")).lower(), str(card.get("collector_number", "")).lower(), str(card.get("cardmarket_id", ""))): card for card in exact}
+            if len(unique_prints) == 1:
+                candidates = list(unique_prints.values())
+            elif len(unique_prints) > 1:
+                diagnostics["ambiguous_name"] += 1
+
+        if not candidates:
+            if not set_code or not collector_number:
+                diagnostics["missing_footer"] += 1
+            else:
+                diagnostics["no_set_number_match"] += 1
             unresolved += 1
             continue
 
-        candidates = index.get((set_code.lower(), collector_number.lower()), [])
-        ranked = [(name_score(card, title_ocr, image_path), card) for card in candidates]
-        ranked = [(score, card) for score, card in ranked if score >= 0.88 and card.get("cardmarket_id")]
-        if not ranked:
-            unresolved += 1
-            continue
-
-        best_score = max(score for score, _ in ranked)
-        best_cards = [card for score, card in ranked if score == best_score]
-        product_ids = {str(card["cardmarket_id"]) for card in best_cards}
+        product_ids = {str(card["cardmarket_id"]) for card in candidates if card.get("cardmarket_id")}
         if len(product_ids) != 1:
+            diagnostics["ambiguous_name"] += 1
             unresolved += 1
             continue
 
-        card = best_cards[0]
+        card = candidates[0]
         # Only record a standard nonfoil product. Foil-only or etched-only matches stay blank.
         if "nonfoil" not in card.get("finishes", []):
+            diagnostics["no_nonfoil"] += 1
             unresolved += 1
             continue
 
@@ -167,6 +206,7 @@ def main():
         if isinstance(value, dict) and value.get("status") == "verified" and value.get("productId")
     )
     print(f"Newly verified: {newly_verified}; verified total: {verified_total}; left blank: {len(images) - verified_total}")
+    print("Unmatched diagnostics: " + json.dumps(diagnostics, sort_keys=True))
 
 if __name__ == "__main__":
     main()
