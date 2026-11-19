@@ -26,5 +26,35 @@
     "printing": "Judgment (JUD) 137/143",
     "finish": "nonfoil",
     "note": "Printing identified from the card scan; Cardmarket product ID not yet verified."
+  },
+  "images/Bala Ged Recovery.webp": {
+    "status": "needs_product_id",
+    "name": "Bala Ged Recovery // Bala Ged Sanctuary",
+    "expansionName": "Zendikar Rising",
+    "setCode": "ZNR",
+    "number": "180",
+    "printing": "Zendikar Rising (ZNR) 180/280",
+    "finish": "nonfoil",
+    "note": "Card scan identifies the ZNR 180/280 modal double-faced card; verify Cardmarket product ID."
+  },
+  "images/Bala ged sanctuary.webp": {
+    "status": "needs_product_id",
+    "name": "Bala Ged Recovery // Bala Ged Sanctuary",
+    "expansionName": "Zendikar Rising",
+    "setCode": "ZNR",
+    "number": "180",
+    "printing": "Zendikar Rising (ZNR) 180/280",
+    "finish": "nonfoil",
+    "note": "Reverse-face image of the same ZNR 180/280 card; same Cardmarket product as Bala Ged Recovery."
+  },
+  "images/Baloth Pup.webp": {
+    "status": "needs_product_id",
+    "name": "Baloth Pup",
+    "expansionName": "Oath of the Gatewatch",
+    "setCode": "OGW",
+    "number": "127",
+    "printing": "Oath of the Gatewatch (OGW) 127/184",
+    "finish": "nonfoil",
+    "note": "Card scan identifies this printing; verify Cardmarket product ID."
   }
 }
