@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Refresh Scryfall frog-art printings and exact Cardmarket daily guide matches."""
+import gzip
 import json
 import re
 import time
@@ -13,6 +14,7 @@ QUERY = "art:frog @@ -is:alchemy"
 SCRYFALL = "https://api.scryfall.com/cards/search"
 PRODUCTS_URL = "https://downloads.s3.cardmarket.com/productCatalog/productList/products_singles_1.json"
 GUIDE_URL = "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json"
+MTGJSON_IDENTIFIERS_URL = "https://mtgjson.com/api/v5/AllIdentifiers.json.gz"
 HEADERS = {"User-Agent": "frogprice/2.0 (Scryfall frog-art checklist)", "Accept": "application/json"}
 
 
@@ -22,6 +24,19 @@ def get_json(url):
         try:
             with urllib.request.urlopen(req, timeout=90) as response:
                 return json.load(response)
+        except Exception:
+            if attempt == 4:
+                raise
+            time.sleep(2 ** attempt)
+
+
+def get_gzip_json(url):
+    req = urllib.request.Request(url, headers=HEADERS)
+    for attempt in range(5):
+        try:
+            with urllib.request.urlopen(req, timeout=180) as response:
+                with gzip.GzipFile(fileobj=response) as stream:
+                    return json.load(stream)
         except Exception:
             if attempt == 4:
                 raise
@@ -73,103 +88,65 @@ def price_value(row, *keys):
 
 
 def build_prices(cards):
-    product_data = get_json(PRODUCTS_URL)
+    # MTGJSON cross-references the exact Scryfall printing UUID to Cardmarket idProduct.
+    # Card names and images remain sourced from Scryfall; all prices come from Cardmarket.
+    identifier_data = get_gzip_json(MTGJSON_IDENTIFIERS_URL)
+    cardmarket_ids = {}
+    for record in identifier_data.get("data", {}).values():
+        identifiers = record.get("identifiers") or {}
+        scryfall_id = identifiers.get("scryfallId")
+        mcm_id = identifiers.get("mcmId")
+        if scryfall_id and mcm_id:
+            cardmarket_ids[str(scryfall_id)] = str(mcm_id)
+
     guide_data = get_json(GUIDE_URL)
-    products = product_data.get("products", [])
-    guides = {str(x.get("idProduct")): x for x in guide_data.get("priceGuides", []) if x.get("idProduct") is not None}
-    # Match using Cardmarket's own product IDs. First try exact normalized
-    # name + expansion + collector number; then name + collector number,
-    # which often resolves Cardmarket expansion-name spelling differences.
-    # When several reprints share a number, compare expansion names and only
-    # accept a clear, high-confidence winner. Never assign a guessed ID.
-    from difflib import SequenceMatcher
-
-    def number_key(value):
-        value = str(value or "").strip().casefold()
-        # Cardmarket sometimes formats collector numbers as "123/280".
-        value = re.sub(r"/\\d+$", "", value)
-        return re.sub(r"[^a-z0-9]+", "", value)
-
-    exact_index, number_index, name_index = {}, {}, {}
-    for product in products:
-        pname = norm(product.get("name") or product.get("enName"))
-        pnum = number_key(product.get("number"))
-        pset = norm(product.get("expansionName") or product.get("expansion"))
-        if pname:
-            name_index.setdefault(pname, []).append(product)
-        if pname and pnum:
-            number_index.setdefault((pname, pnum), []).append(product)
-        if pname and pnum and pset:
-            exact_index.setdefault((pname, pset, pnum), []).append(product)
+    guides = {
+        str(row.get("idProduct")): row
+        for row in guide_data.get("priceGuides", [])
+        if row.get("idProduct") is not None
+    }
 
     prices = {}
     for card in cards:
-        cname = norm(card["name"])
-        cnum = number_key(card["collector_number"])
-        cset = norm(card["set_name"])
-        exact = exact_index.get((cname, cset, cnum), [])
-        candidates = exact if len(exact) == 1 else number_index.get((cname, cnum), [])
-        method = "exact name + expansion + collector number"
-
-        if len(candidates) > 1:
-            scored = []
-            for product in candidates:
-                expansion = product.get("expansionName") or product.get("expansion") or ""
-                score = SequenceMatcher(None, cset, norm(expansion)).ratio()
-                scored.append((score, product))
-            scored.sort(key=lambda item: item[0], reverse=True)
-            if scored[0][0] >= 0.72 and scored[0][0] - scored[1][0] >= 0.10:
-                candidates = [scored[0][1]]
-                method = "card name + collector number + clear expansion match"
-            else:
-                candidates = []
-
-        if len(candidates) != 1 and not exact:
-            # A unique catalogue product name is safe only when there is
-            # exactly one product for that card in the entire catalogue.
-            name_candidates = name_index.get(cname, [])
-            if len(name_candidates) == 1:
-                candidates = name_candidates
-                method = "unique Cardmarket product name"
-
-        if len(candidates) != 1:
-            name_candidates = name_index.get(cname, [])
-            number_candidates = number_index.get((cname, cnum), [])
-            sample = (number_candidates or name_candidates)[:12]
+        product_id = cardmarket_ids.get(str(card["id"]))
+        if not product_id:
             prices[card["id"]] = {
                 "matched": False,
-                "reason": "no Cardmarket product" if not name_candidates else "multiple printings; no unambiguous product ID",
-                "candidate_products": [{
-                    "idProduct": x.get("idProduct"),
-                    "name": x.get("name") or x.get("enName"),
-                    "expansionName": x.get("expansionName"),
-                    "number": x.get("number"),
-                    "idExpansion": x.get("idExpansion"),
-                } for x in sample],
+                "reason": "no Cardmarket product ID cross-reference for this Scryfall printing",
             }
             continue
 
-        product = candidates[0]
-        product_id = str(product.get("idProduct", ""))
         guide = guides.get(product_id)
         if not guide:
-            prices[card["id"]] = {"matched": False, "reason": "no Cardmarket guide data"}
+            prices[card["id"]] = {
+                "matched": False,
+                "reason": "Cardmarket product ID found, but no row in the current price guide",
+                "product_id": product_id,
+                "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=" + product_id,
+            }
             continue
+
         normal = {"trend": price_value(guide, "trend"), "low": price_value(guide, "low")}
-        foil = {"trend": price_value(guide, "trend-holo", "trend-foil"), "low": price_value(guide, "low-holo", "low-foil")}
-        expansion = product.get("expansionName") or product.get("expansion") or ""
+        foil = {
+            "trend": price_value(guide, "trend-holo", "trend-foil"),
+            "low": price_value(guide, "low-holo", "low-foil"),
+        }
         prices[card["id"]] = {
-            "matched": True, "product_id": product_id,
-            "match_method": method,
-            "printing": str(expansion or "Cardmarket product") + ((" · " + str(product.get("number"))) if product.get("number") else ""),
-            "normal": normal, "foil": foil,
+            "matched": True,
+            "product_id": product_id,
+            "match_method": "Scryfall printing UUID to Cardmarket product ID",
+            "normal": normal,
+            "foil": foil,
             "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=" + product_id,
         }
+
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "price_guide_date": guide_data.get("createdAt", product_data.get("createdAt", "unknown")),
-        "currency": "EUR", "prices": prices,
+        "price_guide_date": guide_data.get("createdAt", "unknown"),
+        "currency": "EUR",
+        "prices": prices,
         "source": GUIDE_URL,
+        "id_cross_reference": MTGJSON_IDENTIFIERS_URL,
     }
 
 
@@ -181,7 +158,7 @@ def main():
     prices = build_prices(cards)
     (ROOT / "prices.json").write_text(json.dumps(prices, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     matched = sum(1 for item in prices["prices"].values() if item.get("matched"))
-    print(f"Updated {len(cards)} Scryfall printings; {matched} exact Cardmarket matches.")
+    print(f"Updated {len(cards)} Scryfall printings; {matched} Cardmarket product-ID matches.")
 
 
 if __name__ == "__main__":
