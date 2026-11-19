@@ -14,8 +14,14 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Amphibian Downpour.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 772095,
+    "name": "Amphibian Downpour",
+    "printing": "Modern Horizons 3 (MH3) 51",
+    "trend": 1.47,
+    "low": 0.19,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Anger of the Gods.webp": {
     "matched": true,
@@ -28,36 +34,84 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Anurid barkripper.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 2230,
+    "name": "Anurid Barkripper",
+    "printing": "Judgment (JUD) 104",
+    "trend": 0.05,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Anurid brushhopper.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 2263,
+    "name": "Anurid Brushhopper",
+    "printing": "Judgment (JUD) 137",
+    "trend": 5.34,
+    "low": 0.89,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Anurid murkdiver.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 1755,
+    "name": "Anurid Murkdiver",
+    "printing": "Onslaught (ONS) 124",
+    "trend": 0.08,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Anurid scavenger.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 2388,
+    "name": "Anurid Scavenger",
+    "printing": "Torment (TOR) 119",
+    "trend": 0.12,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Anurid swarmsnapper.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 2231,
+    "name": "Anurid Swarmsnapper",
+    "printing": "Judgment (JUD) 105",
+    "trend": 0.11,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Arcbound Fiend.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 312,
+    "name": "Arcbound Fiend",
+    "printing": "Darksteel (DST) 96",
+    "trend": 0.18,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Auntie's Snitch.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 18886,
+    "name": "Auntie's Snitch",
+    "printing": "Morningtide (MOR) 57",
+    "trend": 0.28,
+    "low": 0.03,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Auntie’s Sentence.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 865756,
+    "name": "Auntie's Sentence",
+    "printing": "Lorwyn Eclipsed (ECL) 85",
+    "trend": 0.07,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Bakis curse.webp": {
     "matched": false,
@@ -94,84 +148,192 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Beastmaster ascension.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778972,
+    "name": "Beastmaster Ascension",
+    "printing": "Bloomburrow Commander (BLC) 118",
+    "trend": 4.71,
+    "low": 2.99,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Beck Call.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 261219,
+    "name": "Beck // Call",
+    "printing": "Dragon's Maze (DGM) 123",
+    "trend": 0.42,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Bellowing crier.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778506,
+    "name": "Bellowing Crier",
+    "printing": "Bloomburrow (BLB) 42",
+    "trend": 0.1,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Berta, Wise Extrapolator.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 880513,
+    "name": "Berta, Wise Extrapolator",
+    "printing": "Secrets of Strixhaven (SOS) 175",
+    "trend": 0.16,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Biomass Mutation.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 259898,
+    "name": "Biomass Mutation",
+    "printing": "Gatecrash (GTC) 213",
+    "trend": 0.28,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Bloated toad.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 10654,
+    "name": "Bloated Toad",
+    "printing": "Urza's Legacy (ULG) 97",
+    "trend": 0.22,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Blor the impervious.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 917860,
+    "name": "Blor the Impervious",
+    "printing": "Mystery Booster Commander Edition (MBC) 28",
+    "trend": 21.13,
+    "low": 19,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Boggart birth rite.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 17842,
+    "name": "Boggart Birth Rite",
+    "printing": "Lorwyn (LRW) 101",
+    "trend": 0.24,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Boggart Prankster.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 865855,
+    "name": "Boggart Prankster",
+    "printing": "Lorwyn Eclipsed (ECL) 93",
+    "trend": 0.09,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Bogwater lumaret.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 880341,
+    "name": "Bogwater Lumaret",
+    "printing": "Secrets of Strixhaven (SOS) 177",
+    "trend": 0.09,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Burglar Banemaker.webp": {
     "matched": false,
     "name": ""
   },
   "images/Burrog barrage.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 883035,
+    "name": "Burrog Barrage",
+    "printing": "Secrets of Strixhaven (SOS) 141",
+    "trend": 0.03,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Burrog befuddler.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 558013,
+    "name": "Burrog Befuddler",
+    "printing": "Strixhaven: School of Mages (STX) 38",
+    "trend": 0.02,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Byrke, long ear of the Law.webp": {
     "matched": false,
     "name": ""
   },
   "images/caterwauling Boggart.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 17898,
+    "name": "Caterwauling Boggart",
+    "printing": "Lorwyn (LRW) 157",
+    "trend": 0.28,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Chain Reaction.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 881443,
+    "name": "Chain Reaction",
+    "printing": "Secrets of Strixhaven Commander (SOC) 121",
+    "trend": 0.17,
+    "low": 0.09,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Chaos warp.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 892421,
+    "name": "Chaos Warp",
+    "printing": "Marvel Super Heroes Commander (MSC) 164",
+    "trend": 0.54,
+    "low": 0.29,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Chea, friend to maybe too many.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 783792,
+    "name": "Chea, Friend to Maybe Too Many",
+    "printing": "Mystery Booster 2 (MB2) 591",
+    "trend": 0.41,
+    "low": 0.04,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Chub toad.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 6329,
+    "name": "Chub Toad",
+    "printing": "Ice Age (ICE) 229",
+    "trend": 0.11,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Circle of protection Green.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 6450,
+    "name": "Circle of Protection: Green",
+    "printing": "Ice Age (ICE) 14",
+    "trend": 0.04,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Cirina Bargainspinner.webp": {
     "matched": false,
@@ -190,24 +352,48 @@
     "name": ""
   },
   "images/Clifftop Lookout.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778120,
+    "name": "Clifftop Lookout",
+    "printing": "Bloomburrow (BLB) 168",
+    "trend": 0.29,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Clue.webp": {
     "matched": false,
     "name": ""
   },
   "images/Commander's Sphere.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 523395,
+    "name": "Commander's Sphere",
+    "printing": "Secret Lair Drop (SLD) 203",
+    "trend": 6.28,
+    "low": 4.49,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Communal Brewing.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778955,
+    "name": "Communal Brewing",
+    "printing": "Bloomburrow Commander (BLC) 29",
+    "trend": 1.47,
+    "low": 0.4,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Croakid Amphibonaut.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 677286,
+    "name": "Croakid Amphibonaut",
+    "printing": "Unfinity (UNF) 43",
+    "trend": 0.03,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Croaking counterpart (2).webp": {
     "matched": true,
@@ -230,24 +416,54 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Crocanura.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 259865,
+    "name": "Crocanura",
+    "printing": "Gatecrash (GTC) 116",
+    "trend": 0.1,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Crop rotation.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 859699,
+    "name": "Crop Rotation",
+    "printing": "Secret Lair Countdown (SLC) 3",
+    "trend": 5.91,
+    "low": 4.9,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Culling Ritual.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 883096,
+    "name": "Culling Ritual",
+    "printing": "Secrets of Strixhaven Mystical Archive (SOA) 62",
+    "trend": 1.38,
+    "low": 0.49,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Cursed Courtier.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 728016,
+    "name": "Cursed Courtier",
+    "printing": "Wilds of Eldraine (WOE) 9",
+    "trend": 0.04,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Cut a Deal.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778963,
+    "name": "Cut a Deal",
+    "printing": "Bloomburrow Commander (BLC) 105",
+    "trend": 0.3,
+    "low": 0.05,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Cutdown A.webp": {
     "matched": false,
@@ -262,20 +478,38 @@
     "name": ""
   },
   "images/Dancing from Dark to Dawn.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 899785,
+    "name": "Dancing from Dark to Dawn",
+    "printing": "The Hobbit (HOB) 123",
+    "trend": 6.08,
+    "low": 4,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Deathcap Glade.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 880542,
+    "name": "Deathcap Glade",
+    "printing": "Secrets of Strixhaven (SOS) 253",
+    "trend": 2.32,
+    "low": 0.7,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Dinas Guidance.webp": {
     "matched": false,
     "name": ""
   },
   "images/Diresight.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 777778,
+    "name": "Diresight",
+    "printing": "Bloomburrow (BLB) 91",
+    "trend": 0.11,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Dour Port-mage (2).webp": {
     "matched": false,
@@ -300,12 +534,24 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Duergar cave-guard.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 19513,
+    "name": "Duergar Cave-Guard",
+    "printing": "Eventide (EVE) 51",
+    "trend": 0.13,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Earwig Squad.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 18889,
+    "name": "Earwig Squad",
+    "printing": "Morningtide (MOR) 60",
+    "trend": 0.63,
+    "low": 0.1,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Ecological Appreciation.webp": {
     "matched": true,
@@ -318,8 +564,14 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Eldritch evolution.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 733261,
+    "name": "Eldritch Evolution",
+    "printing": "Secret Lair Drop (SLD) 1414",
+    "trend": 10.48,
+    "low": 10,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Ellywick Tumblestrum (2).webp": {
     "matched": false,
@@ -346,16 +598,28 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Encouraging aviator.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 882668,
+    "name": "Encouraging Aviator // Jump",
+    "printing": "Secrets of Strixhaven (SOS) 46",
+    "trend": 0.07,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Enhcantment alteration.webp": {
     "matched": false,
     "name": ""
   },
   "images/Entangling Trap.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 17754,
+    "name": "Entangling Trap",
+    "printing": "Lorwyn (LRW) 13",
+    "trend": 0.1,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Excavating anurid.webp": {
     "matched": true,
@@ -368,8 +632,14 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Expanded anatomy.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 556431,
+    "name": "Expanded Anatomy",
+    "printing": "Strixhaven: School of Mages (STX) 2",
+    "trend": 0.1,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Explore.webp": {
     "matched": true,
@@ -406,56 +676,116 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Fearless Swashbuckler.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 807836,
+    "name": "Fearless Swashbuckler",
+    "printing": "Aetherdrift (DFT) 204",
+    "trend": 0.16,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Feral felix.webp": {
     "matched": false,
     "name": ""
   },
   "images/Fire-lit thicket.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 19285,
+    "name": "Fire-Lit Thicket",
+    "printing": "Shadowmoor (SHM) 271",
+    "trend": 6.42,
+    "low": 2.98,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Fisher’s talent.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778959,
+    "name": "Fisher's Talent",
+    "printing": "Bloomburrow Commander (BLC) 36",
+    "trend": 0.43,
+    "low": 0.18,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Flubs, the fool.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 779693,
+    "name": "Flubs, the Fool",
+    "printing": "Bloomburrow Commander (BLC) 356",
+    "trend": 0.8,
+    "low": 0.1,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Follow the lumarets.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 883040,
+    "name": "Follow the Lumarets",
+    "printing": "Secrets of Strixhaven (SOS) 148",
+    "trend": 0.06,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Food.webp": {
     "matched": false,
     "name": ""
   },
   "images/For the common good.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778353,
+    "name": "For the Common Good",
+    "printing": "Bloomburrow (BLB) 172",
+    "trend": 1.99,
+    "low": 0.15,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Fortune Tellers talent.webp": {
     "matched": false,
     "name": ""
   },
   "images/Fountainport bell.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778328,
+    "name": "Fountainport Bell",
+    "printing": "Bloomburrow (BLB) 245",
+    "trend": 0.04,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Frog Butler.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 873787,
+    "name": "Frog Butler",
+    "printing": "Teenage Mutant Ninja Turtles (TMT) 114",
+    "trend": 0.08,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Frog Lizard.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 260117,
+    "name": "Frog Lizard Token (Green 3/3)",
+    "printing": "Gatecrash Tokens (TGTC) 3",
+    "trend": 0.16,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Frog-squirrels.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 855827,
+    "name": "Frog-Squirrels",
+    "printing": "Avatar: The Last Airbender Eternal (TLE) 251",
+    "trend": 0.18,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Frog.webp": {
     "matched": false,
@@ -472,12 +802,24 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Frogify.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 399179,
+    "name": "Frogify",
+    "printing": "Throne of Eldraine (ELD) 47",
+    "trend": 0.14,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Frogkin Kidnapper.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 414919,
+    "name": "Frogkin Kidnapper",
+    "printing": "Mystery Booster Playtest Cards 2019 (CMB1) 42",
+    "trend": 0.02,
+    "low": 0.96,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Frogmite (2).webp": {
     "matched": false,
@@ -488,8 +830,14 @@
     "name": ""
   },
   "images/Frogtosser Banneret.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 18892,
+    "name": "Frogtosser Banneret",
+    "printing": "Morningtide (MOR) 64",
+    "trend": 0.19,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Galloping Lizrog.webp": {
     "matched": true,
@@ -502,20 +850,44 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Gangly Stompling.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 865181,
+    "name": "Gangly Stompling",
+    "printing": "Lorwyn Eclipsed (ECL) 226",
+    "trend": 0.08,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Genghis frog.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 873334,
+    "name": "Genghis Frog",
+    "printing": "Teenage Mutant Ninja Turtles (TMT) 148",
+    "trend": 0.11,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Gev, Scaled Scorch.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778530,
+    "name": "Gev, Scaled Scorch",
+    "printing": "Bloomburrow (BLB) 214",
+    "trend": 0.66,
+    "low": 0.05,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Gigantoad.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 827768,
+    "name": "Gigantoad",
+    "printing": "Final Fantasy (FIN) 187",
+    "trend": 0.03,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Glarb, calamitys augur (2).webp": {
     "matched": false,
@@ -536,20 +908,44 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Goblin balloon brigade.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 12379,
+    "name": "Goblin Balloon Brigade",
+    "printing": "Ninth Edition (9ED) 189",
+    "trend": 0.11,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Goblin Scouts.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 8229,
+    "name": "Goblin Scouts",
+    "printing": "Mirage (MIR) 178",
+    "trend": 0.24,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Gorma, the gullet.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 881316,
+    "name": "Gorma, the Gullet",
+    "printing": "Secrets of Strixhaven Commander (SOC) 3",
+    "trend": 0.74,
+    "low": 0.3,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Gray slaad (2).webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 660874,
+    "name": "Gray Slaad // Entropic Decay",
+    "printing": "Commander Legends: Battle for Baldur's Gate (CLB) 129",
+    "trend": 0.1,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Gray slaad.webp": {
     "matched": true,
@@ -596,28 +992,58 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Grub, notorious auntie.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 866212,
+    "name": "Grub, Storied Matriarch // Grub, Notorious Auntie",
+    "printing": "Lorwyn Eclipsed (ECL) 105",
+    "trend": 0.43,
+    "low": 0.31,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Grub, storied matriarch.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 866212,
+    "name": "Grub, Storied Matriarch // Grub, Notorious Auntie",
+    "printing": "Lorwyn Eclipsed (ECL) 105",
+    "trend": 0.43,
+    "low": 0.31,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Grubs command.webp": {
     "matched": false,
     "name": ""
   },
   "images/Halo hopper.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 704896,
+    "name": "Halo Hopper",
+    "printing": "March of the Machine (MOM) 260",
+    "trend": 0.16,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Harmonize (2).webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 779626,
+    "name": "Harmonize",
+    "printing": "Bloomburrow Commander (BLC) 120",
+    "trend": 0.24,
+    "low": 0.03,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Haze Frog.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 22579,
+    "name": "Haze Frog",
+    "printing": "Rise of the Eldrazi (ROE) 187",
+    "trend": 0.18,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Helga, Skittish seer (2).webp": {
     "matched": false,
@@ -628,16 +1054,34 @@
     "name": ""
   },
   "images/Hezrou.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 660823,
+    "name": "Hezrou // Demonic Stench",
+    "printing": "Commander Legends: Battle for Baldur's Gate (CLB) 131",
+    "trend": 0.02,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Hivespine Wolverine.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778136,
+    "name": "Hivespine Wolverine",
+    "printing": "Bloomburrow (BLB) 177",
+    "trend": 0.19,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Howling mine.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 678661,
+    "name": "Howling Mine",
+    "printing": "The Brothers' War Retro Artifacts (BRR) 83",
+    "trend": 4,
+    "low": 1.45,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Huus reach.webp": {
     "matched": false,
@@ -654,12 +1098,24 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Ignoble Hierarch.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 864987,
+    "name": "Ignoble Hierarch",
+    "printing": "Lorwyn Eclipsed Commander (ECC) 52",
+    "trend": 1.27,
+    "low": 0.9,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Infested Thrinax.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 774776,
+    "name": "Infested Thrinax",
+    "printing": "Modern Horizons 3 Commander (M3C) 74",
+    "trend": 0,
+    "low": 0.1,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Into the floodmaw Jap.webp": {
     "matched": false,
@@ -690,8 +1146,14 @@
     "name": ""
   },
   "images/Jace, the mind sculptor.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778268,
+    "name": "Jace, the Mind Sculptor",
+    "printing": "Bloomburrow Commander (BLC) 75",
+    "trend": 24.58,
+    "low": 20.47,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Jade avenger (2).webp": {
     "matched": false,
@@ -706,8 +1168,14 @@
     "name": ""
   },
   "images/Kasmina´s Transmutation.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 372074,
+    "name": "Kasmina's Transmutation",
+    "printing": "War of the Spark (WAR) 57",
+    "trend": 0.13,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Kawin, itinerant meddler.webp": {
     "matched": false,
@@ -718,20 +1186,44 @@
     "name": ""
   },
   "images/King Solomon's Frogs.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 892677,
+    "name": "King Solomon's Frogs",
+    "printing": "Marvel Super Heroes Commander (MSC) 20",
+    "trend": 0.24,
+    "low": 0.03,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Knowledge Vault.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 7197,
+    "name": "Knowledge Vault",
+    "printing": "Legends (LEG) 281",
+    "trend": 34.2,
+    "low": 29.99,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Lady of Laughter.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 730354,
+    "name": "Lady of Laughter",
+    "printing": "Wilds of Eldraine (WOE) 370",
+    "trend": 0.45,
+    "low": 0.2,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Leapfrog.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 364256,
+    "name": "Leapfrog",
+    "printing": "Guilds of Ravnica (GRN) 42",
+    "trend": 0.03,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Lightning Bolt.webp": {
     "matched": true,
@@ -744,32 +1236,74 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Lilysplash mentor.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 777693,
+    "name": "Lilysplash Mentor",
+    "printing": "Bloomburrow (BLB) 222",
+    "trend": 0.21,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Lluwen, exchange student.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 880522,
+    "name": "Lluwen, Exchange Student // Pest Friend",
+    "printing": "Secrets of Strixhaven (SOS) 199",
+    "trend": 0.08,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Long River Lurker.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778118,
+    "name": "Long River Lurker",
+    "printing": "Bloomburrow (BLB) 57",
+    "trend": 0.12,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Long River's Pull.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778344,
+    "name": "Long River's Pull",
+    "printing": "Bloomburrow (BLB) 58",
+    "trend": 0.34,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Lumaret’s Favor.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 880510,
+    "name": "Lumaret's Favor",
+    "printing": "Secrets of Strixhaven (SOS) 153",
+    "trend": 0.09,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Mabel, Valley Hero.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 908848,
+    "name": "Mabel, Valley Hero",
+    "printing": "Reality Fracture (FRA) 274",
+    "trend": 0.14,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Mabel’s Mettle.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 777763,
+    "name": "Mabel's Mettle",
+    "printing": "Bloomburrow (BLB) 21",
+    "trend": 0.18,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Mad auntie.webp": {
     "matched": false,
@@ -784,12 +1318,24 @@
     "name": ""
   },
   "images/Mercurial Transformation.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 558016,
+    "name": "Mercurial Transformation",
+    "printing": "Strixhaven: School of Mages (STX) 47",
+    "trend": 0.08,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Merrow Levitator.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 19488,
+    "name": "Merrow Levitator",
+    "printing": "Eventide (EVE) 26",
+    "trend": 0.12,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Might of murasa.webp": {
     "matched": true,
@@ -810,24 +1356,54 @@
     "name": ""
   },
   "images/Monstrify.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 19532,
+    "name": "Monstrify",
+    "printing": "Eventide (EVE) 70",
+    "trend": 0.08,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Morgue toad.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 3301,
+    "name": "Morgue Toad",
+    "printing": "Planeshift (PLS) 46",
+    "trend": 0.06,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Mudbutton Cursetosser.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 865762,
+    "name": "Mudbutton Cursetosser",
+    "printing": "Lorwyn Eclipsed (ECL) 112",
+    "trend": 0.12,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Mudbutton Torchrunner.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 17926,
+    "name": "Mudbutton Torchrunner",
+    "printing": "Lorwyn (LRW) 185",
+    "trend": 0.08,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Nantuko  mentor.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 2667,
+    "name": "Nantuko Mentor",
+    "printing": "Odyssey (ODY) 255",
+    "trend": 0.3,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Natures will.webp": {
     "matched": true,
@@ -840,20 +1416,44 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Nissa, who shakes the world (2).webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 372511,
+    "name": "Nissa, Who Shakes the World Emblem",
+    "printing": "Bloomburrow Commander (BLC) 84",
+    "trend": 0.8,
+    "low": 0.05,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Nissa, who shakes the world.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 372511,
+    "name": "Nissa, Who Shakes the World Emblem",
+    "printing": "Bloomburrow Commander (BLC) 84",
+    "trend": 0.8,
+    "low": 0.05,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Noxious toad.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 10012,
+    "name": "Noxious Toad",
+    "printing": "Portal (POR) 104",
+    "trend": 0.46,
+    "low": 0.15,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Octomancer.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778960,
+    "name": "Octomancer",
+    "printing": "Bloomburrow Commander (BLC) 37",
+    "trend": 0.57,
+    "low": 0.25,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Okos Hospitality.webp": {
     "matched": true,
@@ -866,12 +1466,24 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Omnibian.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 13041,
+    "name": "Omnibian",
+    "printing": "Dissension (DIS) 119",
+    "trend": 1.38,
+    "low": 0.1,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Overprotect.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778341,
+    "name": "Overprotect",
+    "printing": "Bloomburrow (BLB) 185",
+    "trend": 1.52,
+    "low": 0.5,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Painted Bluffs.webp": {
     "matched": true,
@@ -894,28 +1506,64 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Pet Avengers.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 891576,
+    "name": "Pet Avengers",
+    "printing": "Marvel Super Heroes (MSH) 178",
+    "trend": 0.1,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Plaxcaster Frogling.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 13048,
+    "name": "Plaxcaster Frogling",
+    "printing": "Dissension (DIS) 123",
+    "trend": 0.31,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Poison Dart Frog.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 741007,
+    "name": "Poison Dart Frog",
+    "printing": "The Lost Caverns of Ixalan (LCI) 207",
+    "trend": 0.1,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Polliwallop.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778103,
+    "name": "Polliwallop",
+    "printing": "Bloomburrow (BLB) 189",
+    "trend": 0.08,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Pollywog prodigy.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778947,
+    "name": "Pollywog Prodigy",
+    "printing": "Bloomburrow Commander (BLC) 15",
+    "trend": 7.62,
+    "low": 5.5,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Pollywog Symbiote.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 451128,
+    "name": "Pollywog Symbiote",
+    "printing": "Ikoria: Lair of Behemoths (IKO) 63",
+    "trend": 0.12,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Poly morphists jest.webp": {
     "matched": false,
@@ -942,12 +1590,24 @@
     "name": ""
   },
   "images/Primal Vigor.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 581200,
+    "name": "Primal Vigor",
+    "printing": "Secret Lair Drop (SLD) 314",
+    "trend": 8.89,
+    "low": 8,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Procrastinate.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 880502,
+    "name": "Procrastinate",
+    "printing": "Secrets of Strixhaven (SOS) 64",
+    "trend": 0.06,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Professor of Zoomancy.webp": {
     "matched": true,
@@ -972,36 +1632,78 @@
     "name": ""
   },
   "images/Punk frogs.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 873948,
+    "name": "Punk Frogs",
+    "printing": "Teenage Mutant Ninja Turtles (TMT) 164",
+    "trend": 0.03,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Quina, Qu Gourmet.webp": {
     "matched": false,
     "name": ""
   },
   "images/Raiding schemes.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 865895,
+    "name": "Raiding Schemes",
+    "printing": "Lorwyn Eclipsed (ECL) 239",
+    "trend": 0.24,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Rampant Frogantua.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 772940,
+    "name": "Rampant Frogantua",
+    "printing": "Modern Horizons 3 Commander (M3C) 118",
+    "trend": 0.39,
+    "low": 0.04,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Rapid hybridization.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778969,
+    "name": "Rapid Hybridization",
+    "printing": "Bloomburrow Commander (BLC) 111",
+    "trend": 1.49,
+    "low": 0.99,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Ride the Shoopuf.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 826992,
+    "name": "Ride the Shoopuf",
+    "printing": "Final Fantasy (FIN) 197",
+    "trend": 0.17,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Riptide shapeshifter.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 1740,
+    "name": "Riptide Shapeshifter",
+    "printing": "Onslaught (ONS) 109",
+    "trend": 0.16,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Rites of Flourishing.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 779388,
+    "name": "Rites of Flourishing",
+    "printing": "Bloomburrow Commander (BLC) 122",
+    "trend": 0.51,
+    "low": 0.17,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/River Heralds Boon.webp": {
     "matched": true,
@@ -1014,16 +1716,34 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Riverchurn Monument.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 808467,
+    "name": "Riverchurn Monument",
+    "printing": "Aetherdrift (DFT) 381",
+    "trend": 1.38,
+    "low": 0.19,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Rootcast apprenticeship.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778957,
+    "name": "Rootcast Apprenticeship",
+    "printing": "Bloomburrow Commander (BLC) 32",
+    "trend": 1.05,
+    "low": 0.19,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Run away together.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 777557,
+    "name": "Run Away Together",
+    "printing": "Bloomburrow (BLB) 67",
+    "trend": 0.06,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Sab-Sumen, Luxa Embodied.webp": {
     "matched": false,
@@ -1034,16 +1754,28 @@
     "name": ""
   },
   "images/Sally pride, lioness leader.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 873344,
+    "name": "Sally Pride, Lioness Leader",
+    "printing": "Teenage Mutant Ninja Turtles (TMT) 225",
+    "trend": 0.32,
+    "low": 0.08,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Season of burrow.webp": {
     "matched": false,
     "name": ""
   },
   "images/Season of Growth.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 730292,
+    "name": "Season of Growth",
+    "printing": "Wilds of Eldraine: Enchanting Tales (WOT) 61",
+    "trend": 0.17,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Season of the Burrow.webp": {
     "matched": false,
@@ -1058,12 +1790,24 @@
     "name": ""
   },
   "images/Secret arcade Dusty parlor.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 787909,
+    "name": "Secret Arcade // Dusty Parlor",
+    "printing": "Duskmourn: House of Horror Commander (DSC) 10",
+    "trend": 2.28,
+    "low": 1,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Sensation gorger.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 18931,
+    "name": "Sensation Gorger",
+    "printing": "Morningtide (MOR) 102",
+    "trend": 1.52,
+    "low": 0.25,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Senseis divining top.webp": {
     "matched": false,
@@ -1074,48 +1818,108 @@
     "name": ""
   },
   "images/Show and Tell.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 751030,
+    "name": "Show and Tell",
+    "printing": "Special Guests (SPG) 21",
+    "trend": 10.72,
+    "low": 9,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Skyskipper Duo.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778916,
+    "name": "Skyskipper Duo",
+    "printing": "Bloomburrow (BLB) 71",
+    "trend": 0.02,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Species Gorger.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 261556,
+    "name": "Species Gorger",
+    "printing": "Dragon's Maze (DGM) 105",
+    "trend": 0.08,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Spiteful Hexmage.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 728478,
+    "name": "Spiteful Hexmage",
+    "printing": "Wilds of Eldraine (WOE) 108",
+    "trend": 0.17,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Splash lasher (2).webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778108,
+    "name": "Splash Lasher",
+    "printing": "Bloomburrow (BLB) 73",
+    "trend": 0.14,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Splash Lasher.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778108,
+    "name": "Splash Lasher",
+    "printing": "Bloomburrow (BLB) 73",
+    "trend": 0.14,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Splash Portal.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778351,
+    "name": "Splash Portal",
+    "printing": "Bloomburrow (BLB) 74",
+    "trend": 0.74,
+    "low": 0.05,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Splatter technique.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 882088,
+    "name": "Splatter Technique",
+    "printing": "Secrets of Strixhaven (SOS) 231",
+    "trend": 0.16,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Spore frog.webp": {
     "matched": false,
     "name": ""
   },
   "images/Spring Splasher.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 764089,
+    "name": "Spring Splasher",
+    "printing": "Outlaws of Thunder Junction (OTJ) 69",
+    "trend": 0.05,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Starseer mentor.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 777702,
+    "name": "Starseer Mentor",
+    "printing": "Bloomburrow (BLB) 233",
+    "trend": 0.15,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Steeple creeper.webp": {
     "matched": true,
@@ -1128,16 +1932,34 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Stickytongue Sentinel.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778499,
+    "name": "Stickytongue Sentinel",
+    "printing": "Bloomburrow (BLB) 193",
+    "trend": 0.05,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Sting-slinger.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 865875,
+    "name": "Sting-Slinger",
+    "printing": "Lorwyn Eclipsed (ECL) 161",
+    "trend": 0.04,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Stress dream.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 880536,
+    "name": "Stress Dream",
+    "printing": "Secrets of Strixhaven (SOS) 235",
+    "trend": 0.05,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Sun-collared raptor.webp": {
     "matched": true,
@@ -1150,12 +1972,24 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Sunshower Druid.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 776459,
+    "name": "Sunshower Druid",
+    "printing": "Bloomburrow (BLB) 195",
+    "trend": 0.1,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Surgeon general commander.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 438084,
+    "name": "Surgeon General Commander",
+    "printing": "Unsanctioned (UND) 72",
+    "trend": 0.43,
+    "low": 0.2,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Swamp (2).webp": {
     "matched": true,
@@ -1172,20 +2006,44 @@
     "name": ""
   },
   "images/Swords to plowshares.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 495524,
+    "name": "Swords to Plowshares",
+    "printing": "Secret Lair Drop (SLD) 110",
+    "trend": 9.62,
+    "low": 9.5,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Sylvan scavenging.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 797383,
+    "name": "Sylvan Scavenging",
+    "printing": "Foundations (FDN) 342",
+    "trend": 0.51,
+    "low": 0.2,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Sylvan Tutor.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778603,
+    "name": "Sylvan Tutor",
+    "printing": "Special Guests (SPG) 59",
+    "trend": 33.72,
+    "low": 29.98,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Tar Pitcher.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 17935,
+    "name": "Tar Pitcher",
+    "printing": "Lorwyn (LRW) 193",
+    "trend": 0.09,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Tatsunari, toad rider (2).webp": {
     "matched": true,
@@ -1208,8 +2066,14 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Textbook Tabulator.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 882992,
+    "name": "Textbook Tabulator",
+    "printing": "Secrets of Strixhaven (SOS) 70",
+    "trend": 0.1,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Thalia and the gitrog monster (2).webp": {
     "matched": false,
@@ -1252,12 +2116,24 @@
     "name": ""
   },
   "images/Thickest in the thicket.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 779242,
+    "name": "Thickest in the Thicket",
+    "printing": "Bloomburrow Commander (BLC) 34",
+    "trend": 1.17,
+    "low": 0.3,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Three tree scribe.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778327,
+    "name": "Three Tree Scribe",
+    "printing": "Bloomburrow (BLB) 199",
+    "trend": 0.17,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Titanic ultimatum.webp": {
     "matched": true,
@@ -1270,16 +2146,28 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Tragedy feaster.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 883016,
+    "name": "Tragedy Feaster",
+    "printing": "Secrets of Strixhaven (SOS) 102",
+    "trend": 0.19,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Treat Trolley.webp": {
     "matched": false,
     "name": ""
   },
   "images/Treeguard Duo.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778505,
+    "name": "Treeguard Duo",
+    "printing": "Bloomburrow (BLB) 200",
+    "trend": 0.06,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Trollbred guardian.webp": {
     "matched": true,
@@ -1292,28 +2180,52 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Turn to Frog.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 247856,
+    "name": "Turn to Frog",
+    "printing": "Magic 2012 (M12) 78",
+    "trend": 0.06,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Twenty-toed toad.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778948,
+    "name": "Twenty-Toed Toad",
+    "printing": "Bloomburrow Commander (BLC) 16",
+    "trend": 5.6,
+    "low": 2.49,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Ulna's Alley Shopkeep.webp": {
     "matched": false,
     "name": ""
   },
   "images/Unwilling Ingredient.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 558024,
+    "name": "Unwilling Ingredient",
+    "printing": "Strixhaven: School of Mages (STX) 90",
+    "trend": 0.03,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Uurg, spawn of turg (2).webp": {
     "matched": false,
     "name": ""
   },
   "images/Uurg, spawn of turg.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 672433,
+    "name": "Uurg, Spawn of Turg",
+    "printing": "Dominaria United (DMU) 225",
+    "trend": 0.05,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Valley floodcaller (2).webp": {
     "matched": false,
@@ -1336,28 +2248,58 @@
     "name": ""
   },
   "images/Venus, Torn Between Worlds.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 873938,
+    "name": "Venus, Torn Between Worlds",
+    "printing": "Teenage Mutant Ninja Turtles (TMT) 136",
+    "trend": 0.12,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Vexling Shusher.webp": {
     "matched": false,
     "name": ""
   },
   "images/Vicious Battlerager.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 660884,
+    "name": "Vicious Battlerager",
+    "printing": "Commander Legends: Battle for Baldur's Gate (CLB) 155",
+    "trend": 0.16,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Visionary's Dance.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 883070,
+    "name": "Visionary's Dance",
+    "printing": "Secrets of Strixhaven (SOS) 242",
+    "trend": 0.09,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Visions of dominance.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 574723,
+    "name": "Visions of Dominance",
+    "printing": "Midnight Hunt Commander (MIC) 37",
+    "trend": 0.48,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Wanderbrine Preacher.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 865146,
+    "name": "Wanderbrine Preacher",
+    "printing": "Lorwyn Eclipsed (ECL) 41",
+    "trend": 0.06,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Wandering troubadour.webp": {
     "matched": true,
@@ -1380,44 +2322,92 @@
     "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Wasteland.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 859722,
+    "name": "Wasteland",
+    "printing": "Secret Lair Countdown (SLC) 23",
+    "trend": 17.4,
+    "low": 12.3,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Waterspout Warden.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778116,
+    "name": "Waterspout Warden",
+    "printing": "Bloomburrow (BLB) 80",
+    "trend": 0.03,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Whiptongue frog.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 9280,
+    "name": "Whiptongue Frog",
+    "printing": "Exodus (EXO) 52",
+    "trend": 0.22,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Wicked cursed.webp": {
     "matched": false,
     "name": ""
   },
   "images/Wish.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 571107,
+    "name": "Wish",
+    "printing": "Adventures in the Forgotten Realms (AFR) 166",
+    "trend": 0.52,
+    "low": 0.17,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Wishing Well.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 778350,
+    "name": "Wishing Well",
+    "printing": "Bloomburrow (BLB) 81",
+    "trend": 0.18,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Witchs familiar.webp": {
     "matched": false,
     "name": ""
   },
   "images/Withering curse.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 880506,
+    "name": "Withering Curse",
+    "printing": "Secrets of Strixhaven (SOS) 105",
+    "trend": 1.28,
+    "low": 0.49,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Woodland liege.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 795448,
+    "name": "Woodland Liege",
+    "printing": "Foundations Jumpstart (J25) 27",
+    "trend": 0.35,
+    "low": 0.08,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Wretched Anurid.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 1814,
+    "name": "Wretched Anurid",
+    "printing": "Onslaught (ONS) 183",
+    "trend": 0.14,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Yargle and multani (2).webp": {
     "matched": false,
@@ -1464,8 +2454,14 @@
     "name": ""
   },
   "images/Yargle, goliath of otaria.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 908830,
+    "name": "Yargle, Goliath of Otaria",
+    "printing": "Reality Fracture (FRA) 225",
+    "trend": 0.09,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/zz1.webp": {
     "matched": false,
