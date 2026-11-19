@@ -13,7 +13,7 @@ A frog-art Magic: The Gathering checklist powered by the Scryfall search query `
 
 ## Pricing and matching
 
-The updater joins Scryfall printings to Cardmarket's Magic singles catalogue only when normalized **card name + expansion name + collector number** match exactly and uniquely. It will not guess from card name alone. Unmatched or ambiguous printings display no price.
+The updater joins Scryfall printings to Cardmarket's Magic singles catalogue by exact normalized **card name + expansion name + collector number** when those fields are available. If the public export omits set metadata, a price is shown only when the Cardmarket catalogue contains exactly one product with that card name; reprints and ambiguous names remain unpriced. This avoids guessing which printing a price belongs to.
 
 Cardmarket's downloadable Price Guide is updated daily. Its Trend and Low fields are guide statistics, not a real-time seller-offer feed. The page labels the source date and links to the matched Cardmarket product.
 
