@@ -73,7 +73,7 @@ def fetch_scryfall():
             "set_name": card.get("set_name", ""), "collector_number": card.get("collector_number", ""),
             "rarity": card.get("rarity", ""), "released_at": card.get("released_at", ""),
             "finishes": card.get("finishes", []), "image": image,
-            "scryfall_uri": card.get("scryfall_uri", ""),
+            "scryfall_uri": card.get("scryfall_uri", ""),\n            "cardmarket_uri": (card.get("purchase_uris") or {}).get("cardmarket"),
         })
     return result
 
@@ -127,8 +127,10 @@ def build_prices(cards):
 
     prices = {}
     for card in cards:
-        product_id = cardmarket_ids.get(str(card["id"]))
-        match_method = "Scryfall printing UUID to Cardmarket product ID"
+        cardmarket_uri = card.get("cardmarket_uri") or ""
+        query_id = urllib.parse.parse_qs(urllib.parse.urlparse(cardmarket_uri).query).get("idProduct", [None])[0]
+        product_id = str(query_id) if query_id else cardmarket_ids.get(str(card["id"]))
+        match_method = "Scryfall Cardmarket purchase link" if query_id else "Scryfall printing UUID to Cardmarket product ID"
         if not product_id:
             possible = []
             for expansion_id in expansion_ids_by_set.get(str(card.get("set", "")).casefold(), set()):
