@@ -174,7 +174,8 @@ def build_prices(cards):
         "currency": "EUR",
         "prices": prices,
         "source": GUIDE_URL,
-        "id_cross_reference": MTGJSON_IDENTIFIERS_URL,\n        "set_cross_reference": SETLIST_URL,
+        "id_cross_reference": MTGJSON_IDENTIFIERS_URL,
+        "set_cross_reference": SETLIST_URL,
     }
 
 
