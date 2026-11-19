@@ -8,7 +8,7 @@
     "productId": 608230,
     "name": "Ambitious Assault",
     "printing": "Kamigawa: Neon Dynasty (NEO) 133/302",
-    "average": 0.08,
+    "trend": 0.11,
     "low": 0.02,
     "currency": "EUR",
     "guideDate": "2026-11-17T02:50:53+0100"
@@ -22,7 +22,7 @@
     "productId": 495539,
     "name": "Anger of the Gods",
     "printing": "Secret Lair Drop Series (SLD) 113",
-    "average": null,
+    "trend": 1.61,
     "low": 1.42,
     "currency": "EUR",
     "guideDate": "2026-11-17T02:50:53+0100"
@@ -64,16 +64,34 @@
     "name": ""
   },
   "images/Bala Ged Recovery.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 495294,
+    "name": "Bala Ged Recovery // Bala Ged Sanctuary",
+    "printing": "Zendikar Rising (ZNR) 180",
+    "trend": 4.92,
+    "low": 1.9,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Bala ged sanctuary.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 495294,
+    "name": "Bala Ged Recovery // Bala Ged Sanctuary",
+    "printing": "Zendikar Rising (ZNR) 180",
+    "trend": 4.92,
+    "low": 1.9,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Baloth Pup.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 287394,
+    "name": "Baloth Pup",
+    "printing": "Oath of the Gatewatch (OGW) 127",
+    "trend": 0.03,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Beastmaster ascension.webp": {
     "matched": false,
@@ -192,12 +210,24 @@
     "name": ""
   },
   "images/Croaking counterpart (2).webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 574794,
+    "name": "Croaking Counterpart",
+    "printing": "Innistrad: Midnight Hunt (MID) 369",
+    "trend": 0.74,
+    "low": 0.15,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Croaking counterpart.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 584999,
+    "name": "Croaking Counterpart",
+    "printing": "Innistrad: Double Feature (DBL) 215",
+    "trend": 0.85,
+    "low": 0.19,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Crocanura.webp": {
     "matched": false,
@@ -260,8 +290,14 @@
     "name": ""
   },
   "images/Druidic Ritual.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 660910,
+    "name": "Druidic Ritual",
+    "printing": "Commander Legends: Battle for Baldur's Gate (CLB) 227",
+    "trend": 0.05,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Duergar cave-guard.webp": {
     "matched": false,
@@ -272,8 +308,14 @@
     "name": ""
   },
   "images/Ecological Appreciation.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 557515,
+    "name": "Ecological Appreciation",
+    "printing": "Strixhaven: School of Mages (STX) 128",
+    "trend": 0.79,
+    "low": 0.15,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Eldritch evolution.webp": {
     "matched": false,
@@ -284,12 +326,24 @@
     "name": ""
   },
   "images/Ellywick tumblestrum (3).webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 570645,
+    "name": "Ellywick Tumblestrum",
+    "printing": "Adventures in the Forgotten Realms (AFR) 181",
+    "trend": 0.58,
+    "low": 0.25,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Ellywick Tumblestrum.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 570646,
+    "name": "Ellywick Tumblestrum",
+    "printing": "Adventures in the Forgotten Realms (AFR) 286",
+    "trend": 1.68,
+    "low": 0.66,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Encouraging aviator.webp": {
     "matched": false,
@@ -304,28 +358,52 @@
     "name": ""
   },
   "images/Excavating anurid.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 375690,
+    "name": "Excavating Anurid",
+    "printing": "Modern Horizons (MH1) 163",
+    "trend": 0.02,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Expanded anatomy.webp": {
     "matched": false,
     "name": ""
   },
   "images/Explore.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 495544,
+    "name": "Explore",
+    "printing": "Secret Lair Drop (SLD) 114",
+    "trend": 3.78,
+    "low": 2.89,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Fatal push.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 495534,
+    "name": "Fatal Push",
+    "printing": "Secret Lair Drop (SLD) 112",
+    "trend": 15.64,
+    "low": 9,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Fauna Shaman (2).webp": {
     "matched": false,
     "name": ""
   },
   "images/Fauna Shaman.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 683425,
+    "name": "Fauna Shaman",
+    "printing": "The Brothers' War (BRO) 179",
+    "trend": 2.8,
+    "low": 0.99,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Fearless Swashbuckler.webp": {
     "matched": false,
@@ -384,8 +462,14 @@
     "name": ""
   },
   "images/Froghemoth.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 571286,
+    "name": "Froghemoth",
+    "printing": "Adventures in the Forgotten Realms (AFR) 184",
+    "trend": 0.31,
+    "low": 0.09,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Frogify.webp": {
     "matched": false,
@@ -408,8 +492,14 @@
     "name": ""
   },
   "images/Galloping Lizrog.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 368266,
+    "name": "Galloping Lizrog",
+    "printing": "Ravnica Allegiance (RNA) 175",
+    "trend": 0.1,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Gangly Stompling.webp": {
     "matched": false,
@@ -436,8 +526,14 @@
     "name": ""
   },
   "images/Glimmer Bairn.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 566922,
+    "name": "Glimmer Bairn",
+    "printing": "Modern Horizons 2 (MH2) 163",
+    "trend": 0.17,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Goblin balloon brigade.webp": {
     "matched": false,
@@ -456,24 +552,48 @@
     "name": ""
   },
   "images/Gray slaad.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 660874,
+    "name": "Gray Slaad // Entropic Decay",
+    "printing": "Commander Legends: Battle for Baldur's Gate (CLB) 129",
+    "trend": 0.1,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Grolnok, the omnivore (2).webp": {
     "matched": false,
     "name": ""
   },
   "images/Grolnok, the omnivore (3).webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 581374,
+    "name": "Grolnok, the Omnivore",
+    "printing": "Innistrad: Crimson Vow (VOW) 238",
+    "trend": 0.4,
+    "low": 0.04,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Grolnok, the omnivore.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 585348,
+    "name": "Grolnok, the Omnivore",
+    "printing": "Innistrad: Double Feature (DBL) 505",
+    "trend": 0.47,
+    "low": 0.15,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Gromp.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 657868,
+    "name": "Spore Frog",
+    "printing": "Secret Lair Drop (SLD) 696",
+    "trend": 4.82,
+    "low": 4,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Grub, notorious auntie.webp": {
     "matched": false,
@@ -524,8 +644,14 @@
     "name": ""
   },
   "images/Hydradoodle.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 313787,
+    "name": "Hydradoodle",
+    "printing": "Unstable (UST) 112",
+    "trend": 0.25,
+    "low": 0.04,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Ignoble Hierarch.webp": {
     "matched": false,
@@ -608,8 +734,14 @@
     "name": ""
   },
   "images/Lightning Bolt.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 905721,
+    "name": "Lightning Bolt",
+    "printing": "Secret Lair Drop (SLD) 2579",
+    "trend": 7.9,
+    "low": 6.41,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Lilysplash mentor.webp": {
     "matched": false,
@@ -660,8 +792,14 @@
     "name": ""
   },
   "images/Might of murasa.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 494694,
+    "name": "Might of Murasa",
+    "printing": "Zendikar Rising (ZNR) 194",
+    "trend": 0.02,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Mistbreath elder (2).webp": {
     "matched": false,
@@ -692,8 +830,14 @@
     "name": ""
   },
   "images/Natures will.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 710712,
+    "name": "Nature's Will",
+    "printing": "Secret Lair Drop (SLD) 1282",
+    "trend": 7.33,
+    "low": 7,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Nissa, who shakes the world (2).webp": {
     "matched": false,
@@ -712,8 +856,14 @@
     "name": ""
   },
   "images/Okos Hospitality.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 399729,
+    "name": "Oko's Hospitality",
+    "printing": "Throne of Eldraine (ELD) 312",
+    "trend": 0.12,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Omnibian.webp": {
     "matched": false,
@@ -724,12 +874,24 @@
     "name": ""
   },
   "images/Painted Bluffs.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 297230,
+    "name": "Painted Bluffs",
+    "printing": "Amonkhet (AKH) 246",
+    "trend": 0.13,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Papercraft decoy.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 608292,
+    "name": "Papercraft Decoy",
+    "printing": "Kamigawa: Neon Dynasty (NEO) 253",
+    "trend": 0.07,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Pet Avengers.webp": {
     "matched": false,
@@ -788,8 +950,14 @@
     "name": ""
   },
   "images/Professor of Zoomancy.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 558096,
+    "name": "Professor of Zoomancy",
+    "printing": "Strixhaven: School of Mages (STX) 140",
+    "trend": 0.07,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Psychic frog (2).webp": {
     "matched": false,
@@ -836,8 +1004,14 @@
     "name": ""
   },
   "images/River Heralds Boon.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 301819,
+    "name": "River Heralds' Boon",
+    "printing": "Ixalan (XLN) 204",
+    "trend": 0.07,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Riverchurn Monument.webp": {
     "matched": false,
@@ -944,8 +1118,14 @@
     "name": ""
   },
   "images/Steeple creeper.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 368609,
+    "name": "Steeple Creeper",
+    "printing": "Ravnica Allegiance (RNA) 142",
+    "trend": 0.03,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Stickytongue Sentinel.webp": {
     "matched": false,
@@ -960,8 +1140,14 @@
     "name": ""
   },
   "images/Sun-collared raptor.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 315433,
+    "name": "Sun-Collared Raptor",
+    "printing": "Rivals of Ixalan (RIX) 118",
+    "trend": 0.19,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Sunshower Druid.webp": {
     "matched": false,
@@ -972,8 +1158,14 @@
     "name": ""
   },
   "images/Swamp (2).webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 914218,
+    "name": "Swamp",
+    "printing": "Secret Lair Drop (SLD) 2118",
+    "trend": 2.83,
+    "low": 1.22,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Swamp.webp": {
     "matched": false,
@@ -996,12 +1188,24 @@
     "name": ""
   },
   "images/Tatsunari, toad rider (2).webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 607190,
+    "name": "Tatsunari, Toad Rider",
+    "printing": "Kamigawa: Neon Dynasty (NEO) 461",
+    "trend": 0.41,
+    "low": 0.1,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Tatsunari, toad rider.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 607189,
+    "name": "Tatsunari, Toad Rider",
+    "printing": "Kamigawa: Neon Dynasty (NEO) 345",
+    "trend": 0.55,
+    "low": 0.19,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Textbook Tabulator.webp": {
     "matched": false,
@@ -1056,8 +1260,14 @@
     "name": ""
   },
   "images/Titanic ultimatum.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 905724,
+    "name": "Titanic Ultimatum",
+    "printing": "Secret Lair Drop (SLD) 2582",
+    "trend": 2.47,
+    "low": 2.34,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Tragedy feaster.webp": {
     "matched": false,
@@ -1072,8 +1282,14 @@
     "name": ""
   },
   "images/Trollbred guardian.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 368264,
+    "name": "Trollbred Guardian",
+    "printing": "Ravnica Allegiance (RNA) 148",
+    "trend": 0.09,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Turn to Frog.webp": {
     "matched": false,
@@ -1144,12 +1360,24 @@
     "name": ""
   },
   "images/Wandering troubadour.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 571337,
+    "name": "Wandering Troubadour",
+    "printing": "Adventures in the Forgotten Realms (AFR) 210",
+    "trend": 0.1,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Warteye vie.webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 375657,
+    "name": "Warteye Witch",
+    "printing": "Modern Horizons (MH1) 115",
+    "trend": 0.05,
+    "low": 0.02,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Wasteland.webp": {
     "matched": false,
@@ -1204,8 +1432,14 @@
     "name": ""
   },
   "images/Yargle, Glutton of Urborg (2).webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 755309,
+    "name": "Yargle, Glutton of Urborg",
+    "printing": "Secret Lair Drop (SLD) 1542",
+    "trend": 1.28,
+    "low": 1,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Yargle, glutton of urborg (3).webp": {
     "matched": false,
@@ -1216,8 +1450,14 @@
     "name": ""
   },
   "images/Yargle, glutton of urborg (5).webp": {
-    "matched": false,
-    "name": ""
+    "matched": true,
+    "productId": 755309,
+    "name": "Yargle, Glutton of Urborg",
+    "printing": "Secret Lair Drop (SLD) 1542",
+    "trend": 1.28,
+    "low": 1,
+    "currency": "EUR",
+    "guideDate": "2026-11-17T02:50:53+0100"
   },
   "images/Yargle, Glutton of Urborg.webp": {
     "matched": false,
