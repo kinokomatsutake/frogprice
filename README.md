@@ -22,6 +22,8 @@ Sources:
 - Scryfall API: https://api.scryfall.com
 - Cardmarket Magic singles catalogue: https://downloads.s3.cardmarket.com/productCatalog/productList/products_singles_1.json
 - Cardmarket Magic daily price guide: https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json
+- MTGJSON Cardmarket ID cross-reference: https://mtgjson.com/api/v5/AllIdentifiers.json.gz
+- MTGJSON set-to-Cardmarket expansion mapping: https://mtgjson.com/api/v5/SetList.json
 
 **Cardmarket terms:** before publicly displaying or redistributing Cardmarket price-guide data, confirm that your intended use complies with Cardmarket's current terms and any permission requirements. Public accessibility of the daily download does not itself establish permission for every reuse.
 
