@@ -45,13 +45,13 @@ def main():
         )
         if verified:
             foil = entry.get("finish") == "foil"
-            average_key, low_key = ("avg-foil", "low-foil") if foil else ("avg", "low")
+            trend_key, low_key = ("trend-foil", "low-foil") if foil else ("trend", "low")
             output[path] = {
                 "matched": True,
                 "productId": int(pid),
                 "name": product.get("name"),
                 "printing": entry.get("printing", ""),
-                "average": values.get(average_key),
+                "trend": values.get(trend_key),
                 "low": values.get(low_key),
                 "currency": "EUR",
                 "guideDate": guide_payload.get("createdAt") if isinstance(guide_payload, dict) else None
