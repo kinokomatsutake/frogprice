@@ -73,7 +73,8 @@ def fetch_scryfall():
             "set_name": card.get("set_name", ""), "collector_number": card.get("collector_number", ""),
             "rarity": card.get("rarity", ""), "released_at": card.get("released_at", ""),
             "finishes": card.get("finishes", []), "image": image,
-            "scryfall_uri": card.get("scryfall_uri", ""),\n            "cardmarket_uri": (card.get("purchase_uris") or {}).get("cardmarket"),
+            "scryfall_uri": card.get("scryfall_uri", ""),
+            "cardmarket_uri": (card.get("purchase_uris") or {}).get("cardmarket"),
         })
     return result
 
