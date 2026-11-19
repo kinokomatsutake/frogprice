@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """OCR gallery cards and resolve only exact, high-confidence Cardmarket product IDs."""
 import difflib
+import gzip
 import io
 import json
 import re
@@ -17,7 +18,10 @@ ORIGINAL_REPO = "https://raw.githubusercontent.com/kinokomatsutake/picture-check
 BULK_INFO_URL = "https://api.scryfall.com/bulk-data"
 
 def fetch_bytes(url, timeout=90):
-    req = urllib.request.Request(url, headers={"User-Agent": "frogprice/1.0 (printing verification)"})
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "frogprice/1.0 (+https://github.com/kinokomatsutake/frogprice)",
+        "Accept": "application/json;q=0.9,*/*;q=0.8"
+    })
     with urllib.request.urlopen(req, timeout=timeout) as response:
         return response.read()
 
@@ -84,7 +88,16 @@ def main():
     bulk = next((item for item in bulk_info.get("data", []) if item.get("type") == "default_cards"), None)
     if not bulk or not bulk.get("download_uri"):
         raise RuntimeError("Scryfall default_cards bulk data URL unavailable")
-    cards = fetch_json(bulk["download_uri"])
+    bulk_url = bulk.get("jsonl_download_uri") or bulk.get("download_uri")
+    if not bulk_url:
+        raise RuntimeError("Scryfall bulk data download URL unavailable")
+    bulk_bytes = fetch_bytes(bulk_url, timeout=900)
+    if bulk_bytes.startswith(b"\\x1f\\x8b"):
+        bulk_bytes = gzip.decompress(bulk_bytes)
+    if bulk.get("jsonl_download_uri"):
+        cards = [json.loads(line) for line in bulk_bytes.splitlines() if line.strip()]
+    else:
+        cards = json.loads(bulk_bytes.decode("utf-8"))
     index = {}
     for card in cards:
         key = (str(card.get("set", "")).lower(), str(card.get("collector_number", "")).lower())
