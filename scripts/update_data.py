@@ -77,26 +77,68 @@ def build_prices(cards):
     guide_data = get_json(GUIDE_URL)
     products = product_data.get("products", [])
     guides = {str(x.get("idProduct")): x for x in guide_data.get("priceGuides", []) if x.get("idProduct") is not None}
-    # Prefer exact printing data when the export contains expansion/number fields.
-    # The public singles export can omit those fields; in that case only use a
-    # card-name match when the Cardmarket catalogue has exactly one product
-    # with that name. Reprints remain deliberately unmatched.
-    exact_index, name_index = {}, {}
+    # Match using Cardmarket's own product IDs. First try exact normalized
+    # name + expansion + collector number; then name + collector number,
+    # which often resolves Cardmarket expansion-name spelling differences.
+    # When several reprints share a number, compare expansion names and only
+    # accept a clear, high-confidence winner. Never assign a guessed ID.
+    from difflib import SequenceMatcher
+
+    def number_key(value):
+        value = str(value or "").strip().casefold()
+        # Cardmarket sometimes formats collector numbers as "123/280".
+        value = re.sub(r"/\\d+$", "", value)
+        return re.sub(r"[^a-z0-9]+", "", value)
+
+    exact_index, number_index, name_index = {}, {}, {}
     for product in products:
         pname = norm(product.get("name") or product.get("enName"))
+        pnum = number_key(product.get("number"))
+        pset = norm(product.get("expansionName") or product.get("expansion"))
         if pname:
             name_index.setdefault(pname, []).append(product)
-        key = (pname, norm(product.get("expansionName")), norm(product.get("number")))
-        if all(key):
-            exact_index.setdefault(key, []).append(product)
+        if pname and pnum:
+            number_index.setdefault((pname, pnum), []).append(product)
+        if pname and pnum and pset:
+            exact_index.setdefault((pname, pset, pnum), []).append(product)
+
     prices = {}
     for card in cards:
-        key = (norm(card["name"]), norm(card["set_name"]), norm(card["collector_number"]))
-        exact = exact_index.get(key, [])
-        candidates = exact if len(exact) == 1 else name_index.get(norm(card["name"]), [])
+        cname = norm(card["name"])
+        cnum = number_key(card["collector_number"])
+        cset = norm(card["set_name"])
+        exact = exact_index.get((cname, cset, cnum), [])
+        candidates = exact if len(exact) == 1 else number_index.get((cname, cnum), [])
+        method = "exact name + expansion + collector number"
+
+        if len(candidates) > 1:
+            scored = []
+            for product in candidates:
+                expansion = product.get("expansionName") or product.get("expansion") or ""
+                score = SequenceMatcher(None, cset, norm(expansion)).ratio()
+                scored.append((score, product))
+            scored.sort(key=lambda item: item[0], reverse=True)
+            if scored[0][0] >= 0.72 and scored[0][0] - scored[1][0] >= 0.10:
+                candidates = [scored[0][1]]
+                method = "card name + collector number + clear expansion match"
+            else:
+                candidates = []
+
+        if len(candidates) != 1 and not exact:
+            # A unique catalogue product name is safe only when there is
+            # exactly one product for that card in the entire catalogue.
+            name_candidates = name_index.get(cname, [])
+            if len(name_candidates) == 1:
+                candidates = name_candidates
+                method = "unique Cardmarket product name"
+
         if len(candidates) != 1:
-            prices[card["id"]] = {"matched": False, "reason": "no Cardmarket product" if not candidates else "multiple Cardmarket printings; exact printing not verifiable"}
+            prices[card["id"]] = {
+                "matched": False,
+                "reason": "no Cardmarket product" if not number_index.get((cname, cnum)) and not name_index.get(cname) else "multiple printings; no unambiguous product ID",
+            }
             continue
+
         product = candidates[0]
         product_id = str(product.get("idProduct", ""))
         guide = guides.get(product_id)
@@ -105,10 +147,11 @@ def build_prices(cards):
             continue
         normal = {"trend": price_value(guide, "trend"), "low": price_value(guide, "low")}
         foil = {"trend": price_value(guide, "trend-holo", "trend-foil"), "low": price_value(guide, "low-holo", "low-foil")}
+        expansion = product.get("expansionName") or product.get("expansion") or ""
         prices[card["id"]] = {
             "matched": True, "product_id": product_id,
-            "match_method": "exact name + expansion + collector number" if len(exact) == 1 else "unique Cardmarket product name (single catalogue printing)",
-            "printing": (str(product.get("expansionName") or product.get("expansion") or "Unique catalogue name match") + ((" · " + str(product.get("number"))) if product.get("number") else "")),
+            "match_method": method,
+            "printing": str(expansion or "Cardmarket product") + ((" · " + str(product.get("number"))) if product.get("number") else ""),
             "normal": normal, "foil": foil,
             "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=" + product_id,
         }
