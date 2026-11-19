@@ -77,18 +77,25 @@ def build_prices(cards):
     guide_data = get_json(GUIDE_URL)
     products = product_data.get("products", [])
     guides = {str(x.get("idProduct")): x for x in guide_data.get("priceGuides", []) if x.get("idProduct") is not None}
-    # Exact normalized card name + expansion + collector number only. Ambiguous matches stay unmatched.
-    index = {}
+    # Prefer exact printing data when the export contains expansion/number fields.
+    # The public singles export can omit those fields; in that case only use a
+    # card-name match when the Cardmarket catalogue has exactly one product
+    # with that name. Reprints remain deliberately unmatched.
+    exact_index, name_index = {}, {}
     for product in products:
-        key = (norm(product.get("name")), norm(product.get("expansionName")), norm(product.get("number")))
+        pname = norm(product.get("name") or product.get("enName"))
+        if pname:
+            name_index.setdefault(pname, []).append(product)
+        key = (pname, norm(product.get("expansionName")), norm(product.get("number")))
         if all(key):
-            index.setdefault(key, []).append(product)
+            exact_index.setdefault(key, []).append(product)
     prices = {}
     for card in cards:
         key = (norm(card["name"]), norm(card["set_name"]), norm(card["collector_number"]))
-        candidates = index.get(key, [])
+        exact = exact_index.get(key, [])
+        candidates = exact if len(exact) == 1 else name_index.get(norm(card["name"]), [])
         if len(candidates) != 1:
-            prices[card["id"]] = {"matched": False, "reason": "no exact match" if not candidates else "ambiguous exact match"}
+            prices[card["id"]] = {"matched": False, "reason": "no Cardmarket product" if not candidates else "multiple Cardmarket printings; exact printing not verifiable"}
             continue
         product = candidates[0]
         product_id = str(product.get("idProduct", ""))
@@ -100,7 +107,7 @@ def build_prices(cards):
         foil = {"trend": price_value(guide, "trend-holo", "trend-foil"), "low": price_value(guide, "low-holo", "low-foil")}
         prices[card["id"]] = {
             "matched": True, "product_id": product_id,
-            "match_method": "exact normalized name + expansion + collector number",
+            "match_method": "exact name + expansion + collector number" if len(exact) == 1 else "unique Cardmarket product name (single catalogue printing)",
             "printing": str(product.get("expansionName", "")) + " · " + str(product.get("number", "")),
             "normal": normal, "foil": foil,
             "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=" + product_id,
