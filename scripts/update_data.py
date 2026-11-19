@@ -14,6 +14,8 @@ QUERY = "art:frog @@ -is:alchemy"
 SCRYFALL = "https://api.scryfall.com/cards/search"
 PRODUCTS_URL = "https://downloads.s3.cardmarket.com/productCatalog/productList/products_singles_1.json"
 GUIDE_URL = "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json"
+PRODUCTS_URL = "https://downloads.s3.cardmarket.com/productCatalog/productList/products_singles_1.json"
+SETLIST_URL = "https://mtgjson.com/api/v5/SetList.json"
 MTGJSON_IDENTIFIERS_URL = "https://mtgjson.com/api/v5/AllIdentifiers.json.gz"
 HEADERS = {"User-Agent": "frogprice/2.0 (Scryfall frog-art checklist)", "Accept": "application/json"}
 
@@ -106,13 +108,39 @@ def build_prices(cards):
         if row.get("idProduct") is not None
     }
 
+    # Fallback for Scryfall printings without a per-card MTGJSON cross-link:
+    # Cardmarket's public catalogue supplies idProduct + idExpansion, while
+    # MTGJSON SetList supplies the Cardmarket expansion IDs for each set code.
+    products_data = get_json(PRODUCTS_URL)
+    products_by_name_and_expansion = {}
+    for product in products_data.get("products", []):
+        pname = norm(product.get("name"))
+        expansion_id = product.get("idExpansion")
+        if pname and expansion_id is not None:
+            products_by_name_and_expansion.setdefault((pname, str(expansion_id)), []).append(product)
+    set_data = get_json(SETLIST_URL)
+    expansion_ids_by_set = {}
+    for set_info in set_data.get("data", []):
+        set_code = str(set_info.get("code", "")).casefold()
+        expansion_ids = [set_info.get("mcmId"), set_info.get("mcmIdExtras")]
+        expansion_ids_by_set[set_code] = {str(x) for x in expansion_ids if x is not None}
+
     prices = {}
     for card in cards:
         product_id = cardmarket_ids.get(str(card["id"]))
+        match_method = "Scryfall printing UUID to Cardmarket product ID"
+        if not product_id:
+            possible = []
+            for expansion_id in expansion_ids_by_set.get(str(card.get("set", "")).casefold(), set()):
+                possible.extend(products_by_name_and_expansion.get((norm(card["name"]), expansion_id), []))
+            unique_ids = {str(x.get("idProduct")): x for x in possible if x.get("idProduct") is not None}
+            if len(unique_ids) == 1:
+                product_id = next(iter(unique_ids))
+                match_method = "Scryfall set code + Cardmarket expansion ID + exact card name"
         if not product_id:
             prices[card["id"]] = {
                 "matched": False,
-                "reason": "no Cardmarket product ID cross-reference for this Scryfall printing",
+                "reason": "no exact Cardmarket product ID cross-reference or set/name match",
             }
             continue
 
@@ -134,7 +162,7 @@ def build_prices(cards):
         prices[card["id"]] = {
             "matched": True,
             "product_id": product_id,
-            "match_method": "Scryfall printing UUID to Cardmarket product ID",
+            "match_method": match_method,
             "normal": normal,
             "foil": foil,
             "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=" + product_id,
@@ -146,7 +174,7 @@ def build_prices(cards):
         "currency": "EUR",
         "prices": prices,
         "source": GUIDE_URL,
-        "id_cross_reference": MTGJSON_IDENTIFIERS_URL,
+        "id_cross_reference": MTGJSON_IDENTIFIERS_URL,\n        "set_cross_reference": SETLIST_URL,
     }
 
 
