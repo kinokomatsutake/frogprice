@@ -92,7 +92,7 @@ def main():
     if not bulk_url:
         raise RuntimeError("Scryfall bulk data download URL unavailable")
     bulk_bytes = fetch_bytes(bulk_url, timeout=900)
-    if bulk_bytes.startswith(b"\\x1f\\x8b"):
+    if bulk_bytes.startswith(b"\x1f\x8b"):
         bulk_bytes = gzip.decompress(bulk_bytes)
     if bulk.get("jsonl_download_uri"):
         cards = [json.loads(line) for line in bulk_bytes.splitlines() if line.strip()]
