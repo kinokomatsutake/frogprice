@@ -1,70 +1,65 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#17251e">
-<title>frogprice — Cardmarket price guide</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#17251e">
+<title>frogprice — Frog art card checklist</title>
 <style>
-:root{color-scheme:dark;--bg:#101813;--panel:#1a2820;--text:#edf5ed;--muted:#a8b8ac;--accent:#a6d68c;--line:#314338}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.45 system-ui,sans-serif}
-header{padding:24px max(18px,calc((100vw - 1200px)/2));background:#17251e;border-bottom:1px solid var(--line)}
-h1{margin:0;font-size:1.8rem}header p{margin:6px 0 0;color:var(--muted)}
-main{max-width:1200px;margin:auto;padding:20px 16px}
-.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
-input,select{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:9px;padding:11px;font:inherit}
-input{flex:1;min-width:180px}.summary{color:var(--muted);font-size:.9rem;margin:0 0 14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
-.card{overflow:hidden;background:var(--panel);border:1px solid var(--line);border-radius:12px}
-.card img{display:block;width:100%;aspect-ratio:488/680;object-fit:cover;background:#25352a}
-.card-info{padding:10px}.name{font-weight:650;overflow-wrap:anywhere;font-size:.94rem}
-.prices{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:9px}
-.price{background:#223329;border-radius:7px;padding:7px;font-size:.78rem;color:var(--muted)}
-.price b{display:block;color:var(--accent);font-size:.98rem;font-variant-numeric:tabular-nums}
-.status{margin-top:8px;font-size:.74rem;color:var(--muted)}
-a{color:var(--accent)}footer{max-width:1200px;margin:28px auto;padding:0 16px 30px;color:var(--muted);font-size:.82rem}
+:root{color-scheme:dark;--bg:#101813;--panel:#1a2820;--panel2:#223329;--text:#edf5ed;--muted:#a8b8ac;--accent:#a6d68c;--line:#314338}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 system-ui,sans-serif}
+header{padding:24px max(18px,calc((100vw - 1280px)/2));background:#17251e;border-bottom:1px solid var(--line)}h1{margin:0;font-size:1.8rem}header p{margin:6px 0 0;color:var(--muted)}
+main{max-width:1280px;margin:auto;padding:20px 16px}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+input,select,button{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:9px;padding:10px 12px;font:inherit}input{flex:1;min-width:190px}button{cursor:pointer}button:hover{border-color:var(--accent)}
+.summary{color:var(--muted);font-size:.9rem;margin:0 0 14px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(172px,1fr));gap:14px}
+.card{overflow:hidden;background:var(--panel);border:1px solid var(--line);border-radius:12px;transition:opacity .15s,border-color .15s}.card img{display:block;width:100%;aspect-ratio:488/680;object-fit:cover;background:#25352a}
+.card-info{padding:10px}.name{font-weight:700;overflow-wrap:anywhere;font-size:.94rem}.meta{color:var(--muted);font-size:.76rem;margin-top:3px;min-height:2.1em}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px}.price{background:var(--panel2);border-radius:7px;padding:7px;font-size:.73rem;color:var(--muted)}
+.price b{display:block;color:var(--accent);font-size:.98rem;font-variant-numeric:tabular-nums}.price small{display:block;font-size:.68rem;margin-top:2px}
+.finish{font-size:.72rem;color:var(--muted);margin-top:8px}.checkline{display:flex;align-items:center;gap:8px;margin-top:10px;padding-top:8px;border-top:1px solid var(--line);font-size:.82rem;cursor:pointer}
+.checkline input{flex:0;width:16px;min-width:16px;accent-color:var(--accent)}.card.collected{opacity:.48}.card.collected img{filter:grayscale(1)}.card.collected .name{text-decoration:line-through}
+.links{display:flex;justify-content:space-between;gap:8px;margin-top:8px;font-size:.72rem}a{color:var(--accent)}.note{color:var(--muted);font-size:.8rem;margin:18px 0 0}.error{color:#ffb3a7}
 @media(max-width:420px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}}
-</style>
-</head>
-<body>
-<header><h1>🐸 frogprice</h1><p>Magic: The Gathering · Cardmarket Price Guide · EUR</p></header>
-<main>
-<div class="toolbar">
-<input id="search" type="search" placeholder="Search cards…" aria-label="Search cards">
-<select id="filter" aria-label="Filter price status"><option value="all">All cards</option><option value="matched">Matched prices</option><option value="unmatched">Not matched</option></select>
-</div>
-<p class="summary" id="summary">Loading collection…</p>
-<section class="grid" id="grid" aria-live="polite"></section>
-</main>
-<footer>Trend and Low are Cardmarket Price Guide values, not guaranteed live listing prices. Prices are in EUR. Exact-printing matches only; unverified cards are labelled Not matched.</footer>
+</style></head><body>
+<header><h1>🐸 frogprice</h1><p>Every printing matching frog artwork · Cardmarket guide prices · EUR</p></header>
+<main><div class="toolbar">
+<input id="search" type="search" placeholder="Search card, set or collector number…" aria-label="Search cards">
+<select id="filter" aria-label="Collection filter"><option value="all">All cards</option><option value="missing">Not collected</option><option value="collected">Collected</option></select>
+<select id="sort" aria-label="Sort cards"><option value="name">Name A–Z</option><option value="set">Set</option><option value="trend">Trend: high to low</option><option value="low">Lowest: low to high</option></select>
+<button id="refresh" type="button">Refresh list</button></div>
+<p class="summary" id="summary">Loading Scryfall frog-art printings…</p><section class="grid" id="grid" aria-live="polite"></section><p class="note" id="updated"></p></main>
+<footer class="note" style="max-width:1280px;margin:20px auto;padding:0 16px 30px">Images and card/printing details: <a href="https://scryfall.com/search?dir=asc&amp;q=art%3Afrog+%40%40+-is%3Aalchemy" target="_blank" rel="noopener">Scryfall frog-art search</a>. Trend and Low are Cardmarket daily Price Guide values, not live seller offers. Foil and non-foil guide values are shown separately where supplied. Price availability depends on exact printing matches.</footer>
 <script>
-const euro = n => Number.isFinite(Number(n)) ? new Intl.NumberFormat('en-IE',{style:'currency',currency:'EUR'}).format(Number(n)) : '—';
-const titleFromPath = p => decodeURIComponent(p.split('/').pop().replace(/\.[^.]+$/,'')).replace(/[_-]+/g,' ');
-async function load(){
- const [images,prices]=await Promise.all([
-  fetch('./images.json').then(r=>{if(!r.ok)throw Error('images.json missing');return r.json()}),
-  fetch('./prices.json').then(r=>r.ok?r.json():{})
- ]);
- const grid=document.querySelector('#grid'),search=document.querySelector('#search'),filter=document.querySelector('#filter');
- const render=()=>{
-  const q=search.value.trim().toLowerCase(),f=filter.value;
-  const rows=images.filter(p=>titleFromPath(p).toLowerCase().includes(q)).filter(p=>f==='all'||(f==='matched'?!!prices[p]?.matched:!prices[p]?.matched));
-  grid.replaceChildren();
-  for(const path of rows){
-   const item=prices[path]||{},card=document.createElement('article');card.className='card';
-   const img=document.createElement('img');img.src='https://raw.githubusercontent.com/kinokomatsutake/picture-checklist/main/'+path.split('/').map(encodeURIComponent).join('/');img.alt=titleFromPath(path);img.loading='lazy';img.onerror=()=>{img.alt='Image unavailable';img.style.minHeight='180px'};
-   const info=document.createElement('div');info.className='card-info';
-   const name=document.createElement('div');name.className='name';name.textContent=item.name||titleFromPath(path);
-   const vals=document.createElement('div');vals.className='prices';
-   for(const [label,value] of [['Trend',item.trend],['Low',item.low]]){const box=document.createElement('div');box.className='price';box.append(document.createTextNode(label));const b=document.createElement('b');b.textContent=item.matched?euro(value):'—';box.append(b);vals.append(box)}
-   const status=document.createElement('div');status.className='status';status.textContent=item.matched?'Exact product mapped'+(item.printing?' · '+item.printing:''):'Not matched — needs printing verification';
-   info.append(name,vals,status);card.append(img,info);grid.append(card);
-  }
-  const matched=images.filter(p=>prices[p]?.matched).length;
-  document.querySelector('#summary').textContent=rows.length+' shown · '+images.length+' images total · '+matched+' with verified product mappings';
- };
- search.addEventListener('input',render);filter.addEventListener('change',render);render();
+const checkedKey='frogprice-collected-v1';let cards=[],prices={};
+const euro=n=>n===null||n===undefined||n===''?'—':new Intl.NumberFormat('en-IE',{style:'currency',currency:'EUR'}).format(Number(n));
+const collected=()=>{try{return new Set(JSON.parse(localStorage.getItem(checkedKey)||'[]'))}catch{return new Set()}};
+function priceBox(label,value){const box=document.createElement('div');box.className='price';box.append(document.createTextNode(label));const b=document.createElement('b');b.textContent=euro(value);box.append(b);return box}
+function cardNode(c){
+ const p=prices[c.id]||{},done=collected().has(c.id),el=document.createElement('article');el.className='card'+(done?' collected':'');
+ const img=document.createElement('img');img.src=c.image||'';img.alt=c.name;img.loading='lazy';
+ const info=document.createElement('div');info.className='card-info';const name=document.createElement('div');name.className='name';name.textContent=c.name;
+ const meta=document.createElement('div');meta.className='meta';meta.textContent=c.set_name+' · '+c.collector_number+' · '+c.rarity;
+ const vals=document.createElement('div');vals.className='prices';vals.append(priceBox('Trend · normal',p.normal?.trend),priceBox('Low · normal',p.normal?.low));
+ if((c.finishes||[]).includes('foil'))vals.append(priceBox('Trend · foil',p.foil?.trend),priceBox('Low · foil',p.foil?.low));
+ const status=document.createElement('div');status.className='finish';status.textContent=p.matched?'Cardmarket printing matched · '+(p.printing||'exact printing'):'Cardmarket match pending — no guessed price';
+ const check=document.createElement('label');check.className='checkline';const input=document.createElement('input');input.type='checkbox';input.checked=done;
+ input.addEventListener('change',()=>{const s=collected();input.checked?s.add(c.id):s.delete(c.id);localStorage.setItem(checkedKey,JSON.stringify([...s]));el.classList.toggle('collected',input.checked);renderSummary()});
+ check.append(input,document.createTextNode('Collected'));const links=document.createElement('div');links.className='links';
+ const sf=document.createElement('a');sf.href=c.scryfall_uri;sf.target='_blank';sf.rel='noopener';sf.textContent='Scryfall';links.append(sf);
+ if(p.cardmarket_url){const cm=document.createElement('a');cm.href=p.cardmarket_url;cm.target='_blank';cm.rel='noopener';cm.textContent='Cardmarket';links.append(cm)}
+ info.append(name,meta,vals,status,check,links);el.append(img,info);return el;
 }
-load().catch(e=>{document.querySelector('#summary').textContent='Could not load collection: '+e.message});
-</script>
-</body></html>
+function renderSummary(rows=cards){const done=collected().size,matched=cards.filter(c=>prices[c.id]?.matched).length;document.querySelector('#summary').textContent=rows.length+' shown · '+cards.length+' printings · '+done+' collected · '+matched+' exact Cardmarket matches'}
+function render(){
+ const q=document.querySelector('#search').value.trim().toLowerCase(),f=document.querySelector('#filter').value,s=document.querySelector('#sort').value,done=collected();
+ let rows=cards.filter(c=>(c.name+' '+c.set_name+' '+c.collector_number).toLowerCase().includes(q)).filter(c=>f==='all'||(f==='collected'?done.has(c.id):!done.has(c.id)));
+ rows.sort((a,b)=>s==='set'?(a.set_name.localeCompare(b.set_name)||a.name.localeCompare(b.name)):s==='trend'?((prices[b.id]?.normal?.trend||0)-(prices[a.id]?.normal?.trend||0)):s==='low'?((prices[a.id]?.normal?.low||Infinity)-(prices[b.id]?.normal?.low||Infinity)):a.name.localeCompare(b.name));
+ document.querySelector('#grid').replaceChildren(...rows.map(cardNode));renderSummary(rows);
+}
+async function load(){
+ const [c,p]=await Promise.all([fetch('./cards.json?'+Date.now()).then(r=>{if(!r.ok)throw Error('Card list not generated yet — run the Refresh workflow in GitHub Actions.');return r.json()}),fetch('./prices.json?'+Date.now()).then(r=>r.ok?r.json():{})]);
+ cards=c.cards||[];prices=p.prices||{};document.querySelector('#updated').textContent='Scryfall list updated: '+(c.generated_at||'unknown')+' · Cardmarket guide date: '+(p.price_guide_date||'not available');render();
+}
+document.querySelector('#search').addEventListener('input',render);document.querySelector('#filter').addEventListener('change',render);document.querySelector('#sort').addEventListener('change',render);
+document.querySelector('#refresh').addEventListener('click',()=>load().catch(showError));
+function showError(e){document.querySelector('#summary').textContent=e.message;document.querySelector('#summary').classList.add('error')}
+load().catch(showError);
+</script></body></html>
