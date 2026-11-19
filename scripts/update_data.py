@@ -65,6 +65,8 @@ def fetch_scryfall():
         time.sleep(0.12)
     result = []
     for card in cards:
+        if norm(card.get("name")) == norm("Treat Trolley"):
+            continue
         image = card.get("image_uris", {}).get("normal")
         if not image and card.get("card_faces"):
             image = next((face.get("image_uris", {}).get("normal") for face in card["card_faces"] if face.get("image_uris")), None)
