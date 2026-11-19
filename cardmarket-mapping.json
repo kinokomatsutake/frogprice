@@ -16,5 +16,15 @@
     "expansionName": "Secret Lair Drop Series",
     "number": "113",
     "printing": "Secret Lair Drop Series (SLD) 113"
+  },
+  "images/Anurid brushhopper.webp": {
+    "status": "needs_product_id",
+    "name": "Anurid Brushhopper",
+    "expansionName": "Judgment",
+    "setCode": "JUD",
+    "number": "137",
+    "printing": "Judgment (JUD) 137/143",
+    "finish": "nonfoil",
+    "note": "Printing identified from the card scan; Cardmarket product ID not yet verified."
   }
 }
