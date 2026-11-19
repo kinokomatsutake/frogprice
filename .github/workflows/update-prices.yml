@@ -9,6 +9,7 @@ on:
       - "cardmarket-mapping.json"
       - "images.json"
       - "scripts/update_prices.py"
+      - "scripts/resolve_cardmarket_ids.py"
       - ".github/workflows/update-prices.yml"
 permissions:
   contents: write
@@ -20,16 +21,24 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install OCR dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr
+          python -m pip install --upgrade pip
+          python -m pip install pillow pytesseract
+      - name: Resolve exact Cardmarket product IDs
+        run: python scripts/resolve_cardmarket_ids.py
       - name: Generate price guide
         run: python scripts/update_prices.py
-      - name: Commit refreshed prices
+      - name: Commit refreshed mappings and prices
         run: |
-          if git diff --quiet -- prices.json; then
-            echo "No price changes."
+          if git diff --quiet -- cardmarket-mapping.json prices.json; then
+            echo "No mapping or price changes."
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add prices.json
-            git commit -m "Update Cardmarket price guide"
+            git add cardmarket-mapping.json prices.json
+            git commit -m "Resolve verified Cardmarket printings and update prices"
             git push
           fi
