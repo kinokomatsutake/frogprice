@@ -39,7 +39,7 @@ function cardNode(c){
  const meta=document.createElement('div');meta.className='meta';meta.textContent=c.set_name+' · '+c.collector_number+' · '+c.rarity;
  const vals=document.createElement('div');vals.className='prices';vals.append(priceBox('Trend · normal',p.normal?.trend),priceBox('Low · normal',p.normal?.low));
  if((c.finishes||[]).includes('foil'))vals.append(priceBox('Trend · foil',p.foil?.trend),priceBox('Low · foil',p.foil?.low));
- const status=document.createElement('div');status.className='finish';status.textContent=p.matched?'Cardmarket printing matched · '+(p.printing||'exact printing'):'Cardmarket match pending — no guessed price';
+ const status=document.createElement('div');status.className='finish';status.textContent=p.matched?'Cardmarket catalogue match · '+(p.printing||'exact printing'):'Cardmarket match pending — no guessed price';
  const check=document.createElement('label');check.className='checkline';const input=document.createElement('input');input.type='checkbox';input.checked=done;
  input.addEventListener('change',()=>{const s=collected();input.checked?s.add(c.id):s.delete(c.id);localStorage.setItem(checkedKey,JSON.stringify([...s]));el.classList.toggle('collected',input.checked);renderSummary()});
  check.append(input,document.createTextNode('Collected'));const links=document.createElement('div');links.className='links';
@@ -47,7 +47,7 @@ function cardNode(c){
  if(p.cardmarket_url){const cm=document.createElement('a');cm.href=p.cardmarket_url;cm.target='_blank';cm.rel='noopener';cm.textContent='Cardmarket';links.append(cm)}
  info.append(name,meta,vals,status,check,links);el.append(img,info);return el;
 }
-function renderSummary(rows=cards){const done=collected().size,matched=cards.filter(c=>prices[c.id]?.matched).length;document.querySelector('#summary').textContent=rows.length+' shown · '+cards.length+' printings · '+done+' collected · '+matched+' exact Cardmarket matches'}
+function renderSummary(rows=cards){const done=collected().size,matched=cards.filter(c=>prices[c.id]?.matched).length;document.querySelector('#summary').textContent=rows.length+' shown · '+cards.length+' printings · '+done+' collected · '+matched+' Cardmarket catalogue matches'}
 function render(){
  const q=document.querySelector('#search').value.trim().toLowerCase(),f=document.querySelector('#filter').value,s=document.querySelector('#sort').value,done=collected();
  let rows=cards.filter(c=>(c.name+' '+c.set_name+' '+c.collector_number).toLowerCase().includes(q)).filter(c=>f==='all'||(f==='collected'?done.has(c.id):!done.has(c.id)));
